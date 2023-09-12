@@ -5,18 +5,27 @@
   <title>airbnb</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- my styles -->
-  <link href="assets/styles/master.scss" rel="stylesheet">
-  <!-- sass -->
+  <!-- styles -->
   <link rel="stylesheet" href="assets/styles/css/master.css">
-  <!-- tailwindcss -->
-  <link rel="stylesheet" href="../dist/output.css">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
+  <h1 class="text-2xl font-bold underline">
     Hello world!
+    <i class="bi bi-0-circle"></i>
   </h1>
+  <h1 class="animate__animated animate__bounce">An animated element</h1>
+  <div class="test" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+  </div>
+  <div class="test" data-aos="fade-in"></div>
+  <div data-aos="fade-in" data-aos-id="super-duper"></div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

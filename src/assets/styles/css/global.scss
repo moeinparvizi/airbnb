@@ -1,7 +1,16 @@
+// import bootsrap icon
+@import  '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+// import tailwindcss
+@import '../../../../dist/output.css';
+// import animate css
+@import '../../../../node_modules/animate.css/animate.css';
+// import font
 @font-face{
   font-family: roboto;
   src: url('../fonts/Roboto/Roboto-Light.ttf');
 }
+
+// repetitious codes
 *{
   margin: 0;
   padding: 0;

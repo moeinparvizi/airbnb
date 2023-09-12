@@ -1,3 +1,6 @@
+@import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../../../../dist/output.css';
+@import '../../../../node_modules/animate.css/animate.css';
 @font-face {
   font-family: roboto;
   src: url("../fonts/Roboto/Roboto-Light.ttf");
@@ -10,6 +13,14 @@
 
 body {
   font-family: roboto;
+}
+
+.test {
+  width: 500px;
+  background: #000;
+  color: whtie;
+  height: 500px;
+  margin: 100px auto;
 }
 
 /*# sourceMappingURL=master.css.map */
