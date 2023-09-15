@@ -1,9 +1,53 @@
 @import 'global';
-
-.test{
-  width: 500px;
-  background: #000;
-  color: whtie;
-  height: 500px;
-  margin:100px auto;
+.navigation{
+  border-bottom: 1px solid $graywhite;
+  >nav{
+    >.navigation-megamenu{
+      >.navigation-megamenu-search{
+        >.search{
+          padding: 5px 10px;
+          >.search-anywhere,>.search-anyweek{
+            padding-right: 25px;
+            border-right: 1px solid $gray !important;
+          }
+          >.search-logo{
+            padding: 7px 0px;
+            >a{
+              >.bi{
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+      >.navigation-megamenu-setting{
+        >.setting{
+          >*{
+            padding:5px;
+          }
+          >.setting-user{
+            >.setting-user-button{
+              transition: .4s;
+              &:hover{
+                background: $gray;
+                >.bi{
+                  color: $black !important;
+                }
+              }
+            }
+            >.setting-user-subbutton{
+              // transform: translateY(-3000px);
+              >li{
+                padding: 17px 12px;
+                width: 100%;
+                &:hover{
+                  background: $graywhite;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

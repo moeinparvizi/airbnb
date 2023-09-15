@@ -10,7 +10,17 @@
   src: url('../fonts/Roboto/Roboto-Light.ttf');
 }
 
+ $pink: #ff385c;
+ $white: #fff;
+ $dark: #222;
+ $gray: #BFBFBF;
+ $graywhite: #fff0f0;
+ $black: #000;
 // repetitious codes
+:root{
+  font-size: 10px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -19,4 +29,21 @@
 
 body{
   font-family: roboto;
+  // background: #111;
+  // color: white;
+font-size: 1.4rem;
+
+  a,a:visited{
+    color: black;
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .header-box-shadow{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  .background-color-gradient{
+    background-image: radial-gradient( circle at center,var(--ihf-tp-q) 0%,#e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100% );
+  }
 }

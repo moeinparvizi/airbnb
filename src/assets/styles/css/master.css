@@ -5,6 +5,10 @@
   font-family: roboto;
   src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
+:root {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +17,56 @@
 
 body {
   font-family: roboto;
+  font-size: 1.4rem;
+}
+body a, body a:visited {
+  color: black;
+  text-decoration: none;
+}
+body ul {
+  list-style-type: none;
+}
+body .header-box-shadow {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+body .background-color-gradient {
+  background-image: radial-gradient(circle at center, var(--ihf-tp-q) 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
 }
 
-.test {
-  width: 500px;
-  background: #000;
-  color: whtie;
-  height: 500px;
-  margin: 100px auto;
+.navigation {
+  border-bottom: 1px solid #fff0f0;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search {
+  padding: 5px 10px;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search > .search-anywhere, .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search > .search-anyweek {
+  padding-right: 25px;
+  border-right: 1px solid #BFBFBF !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search > .search-logo {
+  padding: 7px 0px;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search > .search-logo > a > .bi {
+  color: #fff;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > * {
+  padding: 5px;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-button {
+  transition: 0.4s;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-button:hover {
+  background: #BFBFBF;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-button:hover > .bi {
+  color: #000 !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-subbutton > li {
+  padding: 17px 12px;
+  width: 100%;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-subbutton > li:hover {
+  background: #fff0f0;
 }
 
 /*# sourceMappingURL=master.css.map */

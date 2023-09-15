@@ -12,20 +12,86 @@
 </head>
 
 <body>
-  <h1 class="text-2xl font-bold underline">
-    Hello world!
-    <i class="bi bi-0-circle"></i>
-  </h1>
-  <h1 class="animate__animated animate__bounce">An animated element</h1>
-  <div class="test" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
-    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
-  </div>
-  <div class="test" data-aos="fade-in"></div>
-  <div data-aos="fade-in" data-aos-id="super-duper"></div>
+  <header class="navigation flex justify-center">
+    <nav class="w-[90%]">
+      <ul class="navigation-megamenu relative flex justify-between content-center items-center p-[20px]">
+        <li class="navigation-megamenu-logo">
+          <figure class="w-[80px]">
+            <img class="w-[80px]" src="assets/images/logos/LogoHorizontal.png" alt="">
+          </figure>
+        </li>
+        <li
+          class="navigation-megamenu-search bg-airbnb-white header-box-shadow rounded-[30px] border border-solid border-1 border-airbnb-gray w-[350px]">
+          <ul class="search flex justify-between content-center items-center">
+            <li class="search-anywhere font-bold"><a href="#">anywhere</a>
+            </li>
+            <li class="search-anyweek font-bold"><a href="#">any week</a></li>
+            <li class="guests"><a href="#">add guests</a></li>
+            <li class="search-logo bg-airbnb-pink text-center rounded-[40px]"><a href="#"><i
+                  class="bi bi-search m-4"></i></a>
+            </li>
+          </ul>
+          <ul class="search-sub hidden">
+            <div class="search-sub-nav">
+              <li class="search-sub-nav-stays">stays</li>
+              <li class="search-sub-nav-experiences">experiences</li>
+              <li class="search-sub-nav-online">online experiences</li>
+            </div>
+            <div class="search-sub-box">
+              <li class="search-sub-box-where">
+                <div class="text-airbnb-dark">where</div>
+                <div class="text-airbnb-gray">Search destinations</div>
+              </li>
+              <li class="search-sub-box-checkin">
+                <div class="text-airbnb-dark">check in</div>
+                <div class="text-airbnb-gray">Add dates</div>
+              </li>
+              <li class="search-sub-box-checkout">
+                <div class="text-airbnb-dark">check out</div>
+                <div class="text-airbnb-gray">Add dates</div>
+              </li>
+              <li class="search-sub-box-who">
+                <div class="text-airbnb-dark">who</div>
+                <div class="text-airbnb-gray">Add guests</div>
+              </li>
+              <li class="search-sub-box-logo">
+                <i class="bi bi-search"></i>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li class="navigation-megamenu-setting">
+          <ul class="setting flex justify-between items-center">
+            <li
+              class="setting-yourhome hidden lg:flex absolute top-[50%] left-[80%] translate-y-[-50%] p-[5px] rounded-[20px] font-bold transition-all hover:bg-airbnb-graywhite cursor-pointer">
+              airbnb your home</li>
+            <li class="setting-language text-[15px]"><i class="bi bi-globe2"></i></li>
+            <li class="setting-user cursor-pointer">
+              <div
+                class="setting-user-button border border-solid border-airbnb-gray transition-all rounded-[20px] py-[5px] px-[8px]">
+                <i class="bi bi-list text-[18px]"></i>
+                <i class="bi bi-person-circle text-[18px] text-airbnb-gray"></i>
+              </div>
+              <ul
+                class="setting-user-subbutton translate-y-[-3000px] flex flex-col absolute top-[93%] left-[82%] header-box-shadow border border-solid border-1 border-airbnb-gray bg-airbnb-white rounded-xl w-[200px]">
+                <li class="font-bold">sign up</li>
+                <li>login</li>
+                <hr class="border border-solid border-airbnb-graywhite">
+                <li>airbnb your home</li>
+                <li>help center</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </body>
+<!-- aos cdn -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="assets/js/script.js"></script>
 
 </html>
