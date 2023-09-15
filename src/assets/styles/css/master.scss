@@ -19,6 +19,45 @@
             }
           }
         }
+        >.search-sub{
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          opacity: 0.5;
+          transform: translateX(-50%)scale(0);
+          >.search-sub-nav{
+            >li{
+              padding: 20px;
+              transition: .4s;
+              &:first-child{
+                border-bottom: 2px solid black;
+              }
+              &:hover{
+                border-bottom: 2px solid black;
+              }
+            }
+          }
+          >.search-sub-box{
+            >li{
+              border-radius: 40px;
+              padding: 20px;
+              transition: all .4s linear;
+
+              &:hover{
+                background: $white;
+              }
+            }
+            >.search-sub-box-who{
+              >.search-sub-box-who-search{
+                color: $white;
+                transition: .4s;
+                &:hover{
+                  background: $pink;
+                }
+              }
+            }
+          }
+        }
       }
       >.navigation-megamenu-setting{
         >.setting{

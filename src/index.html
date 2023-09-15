@@ -31,31 +31,38 @@
                   class="bi bi-search m-4"></i></a>
             </li>
           </ul>
-          <ul class="search-sub hidden">
-            <div class="search-sub-nav">
+          <ul class="search-sub flex-col">
+            <div class="search-sub-nav flex justify-center">
               <li class="search-sub-nav-stays">stays</li>
               <li class="search-sub-nav-experiences">experiences</li>
               <li class="search-sub-nav-online">online experiences</li>
+              <li class="close-sub-search">
+                <i class="bi bi-x-lg"></i>
+              </li>
             </div>
-            <div class="search-sub-box">
+            <div class="search-sub-box flex header-box-shadow rounded-[40px] bg-airbnb-graywhite">
               <li class="search-sub-box-where">
-                <div class="text-airbnb-dark">where</div>
-                <div class="text-airbnb-gray">Search destinations</div>
+                <div class="text-airbnb-black">where</div>
+                <div class="text-airbnb-dark">Search destinations</div>
               </li>
               <li class="search-sub-box-checkin">
-                <div class="text-airbnb-dark">check in</div>
-                <div class="text-airbnb-gray">Add dates</div>
+                <div class="text-airbnb-black">check in</div>
+                <div class="text-airbnb-dark">Add dates</div>
               </li>
               <li class="search-sub-box-checkout">
-                <div class="text-airbnb-dark">check out</div>
-                <div class="text-airbnb-gray">Add dates</div>
+                <div class="text-airbnb-black">check out</div>
+                <div class="text-airbnb-dark">Add dates</div>
               </li>
-              <li class="search-sub-box-who">
-                <div class="text-airbnb-dark">who</div>
-                <div class="text-airbnb-gray">Add guests</div>
-              </li>
-              <li class="search-sub-box-logo">
-                <i class="bi bi-search"></i>
+              <li class="search-sub-box-who flex">
+                <div class="search-sub-box-who-text mr-2">
+                  <div class="text-airbnb-black">who</div>
+                  <div class="text-airbnb-dark">Add guests</div>
+                </div>
+                <div
+                  class="search-sub-box-who-search flex justify-center items-center background-color-gradient text-[20px] text-center rounded-[20px] p-[5px] header-box-shadow">
+                  <i class="bi bi-search"></i>
+                  search
+                </div>
               </li>
             </div>
           </ul>

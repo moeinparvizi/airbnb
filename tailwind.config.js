@@ -7,6 +7,7 @@ module.exports = {
       'airbnb': {
         pink: '#ff385c',
         white: '#fff',
+        black: '#000',
         dark: '#222',
         gray: '#BFBFBF',
         graywhite: '#ddd',

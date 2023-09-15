@@ -29,9 +29,7 @@
 
 body{
   font-family: roboto;
-  // background: #111;
-  // color: white;
-font-size: 1.4rem;
+  font-size: 1.4rem;
 
   a,a:visited{
     color: black;
@@ -44,6 +42,6 @@ font-size: 1.4rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   }
   .background-color-gradient{
-    background-image: radial-gradient( circle at center,var(--ihf-tp-q) 0%,#e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100% );
+    background-image: radial-gradient( circle at center 0%,#e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100% );
   }
 }
