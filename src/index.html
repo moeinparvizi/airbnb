@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <header class="navigation flex justify-center">
-    <nav class="w-[90%]">
-      <ul class="navigation-megamenu relative flex justify-between content-center items-center p-[20px]">
+  <header class="navigation flex justify-center flex-col fixed z-50 w-full bg-airbnb-white">
+    <nav>
+      <ul
+        class="navigation-megamenu transition-all relative flex justify-between content-center items-center p-[20px] w-full">
         <li class="navigation-megamenu-logo">
           <figure class="w-[80px]">
             <img class="w-[80px]" src="assets/images/logos/LogoHorizontal.png" alt="">
@@ -41,22 +42,54 @@
               </li>
             </div>
             <div class="search-sub-box flex header-box-shadow rounded-[40px] bg-airbnb-graywhite">
-              <li class="search-sub-box-where">
+              <li class="search-sub-box-where relative">
                 <div class="text-airbnb-black">where</div>
-                <div class="text-airbnb-dark">Search destinations</div>
+                <input type="text" class="text-airbnb-dark" placeholder="Search destinations"></input>
+                <div
+                  class="sub-where absolute top-[110%] left-[-100%] w-[390px] rounded-[40px] p-[20px] bg-airbnb-white opacity-0 header-box-shadow">
+                  <h2 class="text-center mb-2 font-bold">search by region</h2>
+                  <div class="flex flex-wrap justify-center items-center content-center w-full">
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/4e762891-75a3-4fe1-b73a-cd7e673ba915.jpg" alt="">
+                      <figcaption>i`m flexible</figcaption>
+                    </figure>
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/66355b01-4695-4db9-b292-c149c46fb1ca.jpg" alt="">
+                      <figcaption>middle east</figcaption>
+                    </figure>
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg" alt="">
+                      <figcaption>i`m flexible</figcaption>
+                    </figure>
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/a0fd6dfc-6bec-4abb-850e-9ab78ed7bf37.jpg" alt="">
+                      <figcaption>i`m flexible</figcaption>
+                    </figure>
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/d77de9f5-5318-4571-88c7-e97d2355d20a.jpg" alt="">
+                      <figcaption>i`m flexible</figcaption>
+                    </figure>
+                    <figure class="w-[80px] m-[5px]">
+                      <img class="object-cover hover:border rounded-xl"
+                        src="assets/images/contrys/ea5598d7-2b07-4ed7-84da-d1eabd9f2714.jpg" alt="">
+                      <figcaption>i`m flexible</figcaption>
+                    </figure>
+                  </div>
+                </div>
               </li>
-              <li class="search-sub-box-checkin">
-                <div class="text-airbnb-black">check in</div>
-                <div class="text-airbnb-dark">Add dates</div>
-              </li>
-              <li class="search-sub-box-checkout">
-                <div class="text-airbnb-black">check out</div>
-                <div class="text-airbnb-dark">Add dates</div>
+              <li class="search-sub-box-date">
+                <h3 class="text-airbnb-black">when</h3>
+                <p class="text-airbnb-dark">Add dates</p>
               </li>
               <li class="search-sub-box-who flex">
                 <div class="search-sub-box-who-text mr-2">
-                  <div class="text-airbnb-black">who</div>
-                  <div class="text-airbnb-dark">Add guests</div>
+                  <h3 class="text-airbnb-black">who</h3>
+                  <p class="text-airbnb-dark">Add guests</p>
                 </div>
                 <div
                   class="search-sub-box-who-search flex justify-center items-center background-color-gradient text-[20px] text-center rounded-[20px] p-[5px] header-box-shadow">
@@ -71,16 +104,18 @@
           <ul class="setting flex justify-between items-center">
             <li
               class="setting-yourhome hidden lg:flex absolute top-[50%] left-[80%] translate-y-[-50%] p-[5px] rounded-[20px] font-bold transition-all hover:bg-airbnb-graywhite cursor-pointer">
-              airbnb your home</li>
-            <li class="setting-language text-[15px]"><i class="bi bi-globe2"></i></li>
-            <li class="setting-user cursor-pointer">
+              <h1>airbnb your home</h1>
+            </li>
+            <li class="setting-language text-[15px] transition-all hover:bg-airbnb-pink rounded-full"><i
+                class="bi bi-globe2"></i></li>
+            <li class="setting-user cursor-pointer relative">
               <div
                 class="setting-user-button border border-solid border-airbnb-gray transition-all rounded-[20px] py-[5px] px-[8px]">
                 <i class="bi bi-list text-[18px]"></i>
                 <i class="bi bi-person-circle text-[18px] text-airbnb-gray"></i>
               </div>
               <ul
-                class="setting-user-subbutton translate-y-[-3000px] flex flex-col absolute top-[93%] left-[82%] header-box-shadow border border-solid border-1 border-airbnb-gray bg-airbnb-white rounded-xl w-[200px]">
+                class="setting-user-subbutton translate-y-[-1000px] flex flex-col absolute top-[93%] left-[-200%] header-box-shadow border border-solid border-1 border-airbnb-gray bg-airbnb-white rounded-xl w-[200px]">
                 <li class="font-bold">sign up</li>
                 <li>login</li>
                 <hr class="border border-solid border-airbnb-graywhite">
@@ -93,6 +128,8 @@
       </ul>
     </nav>
   </header>
+  <div class="black-curtain flex hidden z-[2]">s</div>
+  <section class="border h-[300vh]">hello world</section>
 </body>
 <!-- aos cdn -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -33,6 +33,13 @@ body .background-color-gradient {
   background-image: radial-gradient(circle at center 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
 }
 
+.hover-setting-effect {
+  background: #BFBFBF !important;
+}
+.hover-setting-effect > .bi {
+  color: #000 !important;
+}
+
 .navigation {
   border-bottom: 1px solid #fff0f0;
 }
@@ -63,8 +70,11 @@ body .background-color-gradient {
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-nav > li:first-child {
   border-bottom: 2px solid black;
 }
-.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-nav > li:hover {
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-nav > li:hover:not(:last-child) {
   border-bottom: 2px solid black;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-nav > li:last-child:hover {
+  color: #ff385c;
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > li {
   border-radius: 40px;
@@ -72,7 +82,21 @@ body .background-color-gradient {
   transition: all 0.4s linear;
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > li:hover {
-  background: #fff;
+  background: #fff !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-where > input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-where > .sub-where {
+  z-index: 99 !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-where > h3,
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-checkin > h3,
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-checkout > h3,
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-who > h3 {
+  font-weight: bold;
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-who > .search-sub-box-who-search {
   color: #fff;
@@ -99,6 +123,15 @@ body .background-color-gradient {
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-setting > .setting > .setting-user > .setting-user-subbutton > li:hover {
   background: #fff0f0;
+}
+
+.black-curtain {
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  z-index: 20 !important;
 }
 
 /*# sourceMappingURL=master.css.map */

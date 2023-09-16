@@ -45,3 +45,11 @@ body{
     background-image: radial-gradient( circle at center 0%,#e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100% );
   }
 }
+
+// for js
+.hover-setting-effect{
+  background: $gray !important;
+  >.bi{
+    color: $black !important;
+  }
+}

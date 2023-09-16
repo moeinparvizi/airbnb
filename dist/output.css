@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -590,8 +594,100 @@ video {
   left: 82%;
 }
 
+.left-\[400px\] {
+  left: 400px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.left-\[72\%\] {
+  left: 72%;
+}
+
+.left-\[52\%\] {
+  left: 52%;
+}
+
+.left-\[0\] {
+  left: 0;
+}
+
+.left-\[-50\%\] {
+  left: -50%;
+}
+
+.left-\[-100\%\] {
+  left: -100%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.top-\[90\%\] {
+  top: 90%;
+}
+
+.left-\[-150\%\] {
+  left: -150%;
+}
+
+.left-\[-200\%\] {
+  left: -200%;
+}
+
+.top-\[110\%\] {
+  top: 110%;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[70px\] {
+  top: 70px;
+}
+
+.left-\[-10\%\] {
+  left: -10%;
+}
+
+.left-\[-120\%\] {
+  left: -120%;
+}
+
+.left-\[-220\%\] {
+  left: -220%;
+}
+
+.left-\[-210\%\] {
+  left: -210%;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-\[100\] {
+  z-index: 100;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
 .m-4 {
   margin: 1rem;
+}
+
+.m-\[20px\] {
+  margin: 20px;
+}
+
+.m-\[5px\] {
+  margin: 5px;
 }
 
 .mr-1 {
@@ -602,12 +698,24 @@ video {
   margin-right: 0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-\[300vh\] {
+  height: 300vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-\[350px\] {
@@ -634,6 +742,22 @@ video {
   width: 500px;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[390px\] {
+  width: 390px;
+}
+
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -641,6 +765,21 @@ video {
 
 .translate-y-\[-3000px\] {
   --tw-translate-y: -3000px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-300px\] {
+  --tw-translate-y: -300px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-400px\] {
+  --tw-translate-y: -400px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-1000px\] {
+  --tw-translate-y: -1000px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -658,6 +797,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-center {
@@ -694,6 +837,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -746,6 +893,11 @@ video {
   background-color: rgb(221 221 221 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -785,6 +937,10 @@ video {
 .px-\[8px\] {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -837,6 +993,14 @@ video {
   color: rgb(191 191 191 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-\[0\.7\] {
+  opacity: 0.7;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -851,9 +1015,23 @@ video {
   transition-duration: 150ms;
 }
 
+.hover\:border:hover {
+  border-width: 1px;
+}
+
 .hover\:bg-airbnb-graywhite:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-airbnb-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-airbnb-pink:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 56 92 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
