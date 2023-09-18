@@ -15,10 +15,10 @@
   <header class="navigation flex justify-center flex-col fixed z-50 w-full bg-airbnb-white">
     <nav>
       <ul
-        class="navigation-megamenu transition-all relative flex justify-between content-center items-center p-[20px] w-full">
+        class="navigation-megamenu hidden md:flex relative justify-between content-center items-center p-[20px] w-full">
         <li class="navigation-megamenu-logo">
           <figure class="w-[80px]">
-            <img class="w-[80px]" src="assets/images/logos/LogoHorizontal.png" alt="">
+            <img src="assets/images/logos/LogoHorizontal.png" alt="">
           </figure>
         </li>
         <li
@@ -43,10 +43,10 @@
             </div>
             <div class="search-sub-box flex header-box-shadow rounded-[40px] bg-airbnb-graywhite">
               <li class="search-sub-box-where relative">
-                <div class="text-airbnb-black">where</div>
+                <h3 class="text-airbnb-black">where</h3>
                 <input type="text" class="text-airbnb-dark" placeholder="Search destinations"></input>
                 <div
-                  class="sub-where absolute top-[110%] left-[-100%] w-[390px] rounded-[40px] p-[20px] bg-airbnb-white opacity-0 header-box-shadow">
+                  class="sub-where subreseting absolute top-[110%] left-[-50%] w-[390px] rounded-[40px] p-[20px] bg-airbnb-white opacity-0 header-box-shadow">
                   <h2 class="text-center mb-2 font-bold">search by region</h2>
                   <div class="flex flex-wrap justify-center items-center content-center w-full">
                     <figure class="w-[80px] m-[5px]">
@@ -85,6 +85,24 @@
               <li class="search-sub-box-date">
                 <h3 class="text-airbnb-black">when</h3>
                 <p class="text-airbnb-dark">Add dates</p>
+                <!-- todo -->
+                <div
+                  class="when-sub subreseting absolute top-[110%] left-[0] w-[490px] rounded-[40px] p-[20px] bg-airbnb-white opacity-1 header-box-shadow">
+                  <div class="when-sub-menu flex justify-center h-[35px]">
+                    <ul
+                      class="when-sub-menu-ul w-[190px] h-[35px] flex justify-center items-center bg-airbnb-gray rounded-full">
+                      <li data-tab='sub1' class="when-sub-menu-ul-dates p-[5px]">dates</li>
+                      <li data-tab='sub2' class="when-sub-menu-ul-mounth p-[5px]">mounth</li>
+                      <li data-tab='sub3' class="when-sub-menu-ul-flexible p-[5px]">flexible
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="when-sub-submenu mt-[5px]">
+                    <div id="sub1" class="when-sub-submenu-dates">this is dates submenu</div>
+                    <div id="sub2" class="when-sub-submenu-mounth">this is mounth in submenu</div>
+                    <div id="sub3" class="when-sub-submenu-flexible">this is flexible in submenu</div>
+                  </div>
+                </div>
               </li>
               <li class="search-sub-box-who flex">
                 <div class="search-sub-box-who-text mr-2">
@@ -106,8 +124,10 @@
               class="setting-yourhome hidden lg:flex absolute top-[50%] left-[80%] translate-y-[-50%] p-[5px] rounded-[20px] font-bold transition-all hover:bg-airbnb-graywhite cursor-pointer">
               <h1>airbnb your home</h1>
             </li>
-            <li class="setting-language text-[15px] transition-all hover:bg-airbnb-pink rounded-full"><i
-                class="bi bi-globe2"></i></li>
+            <li
+              class="setting-language text-[15px] transition-all hover:bg-airbnb-pink hover:text-airbnb-white rounded-full">
+              <i class="bi bi-globe2"></i>
+            </li>
             <li class="setting-user cursor-pointer relative">
               <div
                 class="setting-user-button border border-solid border-airbnb-gray transition-all rounded-[20px] py-[5px] px-[8px]">
@@ -128,8 +148,8 @@
       </ul>
     </nav>
   </header>
-  <div class="black-curtain flex hidden z-[2]">s</div>
-  <section class="border h-[300vh]">hello world</section>
+  <div class="black-curtain flex hidden  z-[2]">s</div>
+  <section class="border h-[300vh] pt-[90px] px-[5px]">hello world</section>
 </body>
 <!-- aos cdn -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

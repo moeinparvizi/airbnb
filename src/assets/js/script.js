@@ -7,71 +7,133 @@ document.querySelector('.setting-user-button').addEventListener('click', () => {
   sett.classList.toggle('hover-setting-effect')
 })
 
-const curtain = document.querySelector('.black-curtain')
 const cutrainChecker = () => {
+  const curtain = document.querySelector('.black-curtain')
   curtain.style.transition = '1s'
   if (curtain.classList.contains('hidden')) {
     curtain.classList.remove('hidden')
-    curtain.style.opacity = '0.7'
+    curtain.style.opacity = '0.5'
   } else {
     curtain.classList.add('hidden')
     curtain.style.opacity = '0'
   }
 }
-document.querySelector('.search').addEventListener('click', () => {
-  document.querySelector('.navigation-megamenu').style.transition = '1s'
-  const sub = document.querySelector('.search-sub')
-  const search = document.querySelector('.search')
-  const mega = document.querySelector('.navigation-megamenu-search')
-  mega.style.border = 'none'
-  mega.style.boxShadow = 'none'
-  search.style.transition = '.4s'
-  search.style.transform = 'scale(1)'
-  search.opacity = '0'
-  document.querySelector('.search').style.opacity = '0'
-  document.querySelector('.search-anywhere').opacity = '0'
-  document.querySelector('.search-anyweek').opacity = '0'
-  document.querySelector('.guests').opacity = '0'
+
+const sub = document.querySelector('.search-sub')
+const search = document.querySelector('.search')
+const mega = document.querySelector('.navigation-megamenu-search')
+document.querySelector('.navigation-megamenu').style.transition = '1s'
+
+const closeOrOpenSearchChecker = (checker) => {
   sub.style.transition = '.4s'
-  sub.style.transform = 'translateX(-50%)scale(1)'
-  sub.style.opacity = '1'
-  document.querySelector('.navigation-megamenu').style.height = '200px'
-  document.querySelector('.text-airbnb-dark').focus()
-  cutrainChecker()
+  if (checker == 1) {
+    document.querySelector('.search').style.opacity = '0'
+    mega.style.border = 'none'
+    mega.style.boxShadow = 'none'
+    search.style.transition = '.4s'
+    search.style.transform = 'scale(2)'
+    search.style.opacity = '0'
+    sub.style.transform = 'translateX(-50%)scale(1)'
+    sub.style.opacity = '1'
+    setTimeout(() => {
+      search.style.display = 'none'
+    }, 1000)
+    document.querySelector('.navigation-megamenu').style.height = '200px'
+    document.querySelector('.text-airbnb-dark').focus()
+    cutrainChecker()
+  } else {
+    document.querySelector('.search').style.opacity = '1'
+    mega.style.border = '1px solid $gray'
+    mega.style.boxShadow = '0 3px 10px rgba(0, 0, 0, 0.1)'
+    search.style.display = 'flex'
+    search.style.transform = 'scale(1)'
+    search.style.opacity = '1'
+    sub.style.transition = '.4s'
+    sub.style.transform = 'translateX(-50%)scale(0)'
+    sub.style.opacity = '0'
+    document.querySelector('.navigation-megamenu').style.height = '80px'
+    cutrainChecker()
+  }
+}
+document.querySelector('.search').addEventListener('click', () => {
+  closeOrOpenSearchChecker(1)
 })
 
 document.querySelector('.close-sub-search').addEventListener('click', () => {
-  const sub = document.querySelector('.search-sub')
-  const search = document.querySelector('.search')
-  const mega = document.querySelector('.navigation-megamenu-search')
-  mega.style.border = '1px solid $gray'
-  mega.style.boxShadow = '0 3px 10px rgba(0, 0, 0, 0.1)'
-  search.style.transition = '.4s'
-  search.style.transform = 'scale(1)'
-  search.style.opacity = '0'
-  document.querySelector('.search').style.opacity = '1'
-  document.querySelector('.search-anywhere').opacity = '1'
-  document.querySelector('.search-anyweek').opacity = '1'
-  document.querySelector('.guests').opacity = '1'
-  sub.style.transition = '.4s'
-  sub.style.transform = 'translateX(-50%)scale(0)'
-  sub.style.opacity = '0'
-  document.querySelector('.navigation-megamenu').style.height = '80px'
-  cutrainChecker()
+  closeOrOpenSearchChecker(0)
 })
 
 let flag = 0
-document.querySelector('.search-sub-box-where').addEventListener('click', () => {
-  const subWhere = document.querySelector('.sub-where')
-  const box = document.querySelector('.search-sub-box-where')
-  subWhere.style.transition = '.4s'
+const subChecker = (sub, box) => {
+  sub.style.flexDirection = 'column'
+  sub.style.transition = '.4s'
   if (flag == 0) {
-    subWhere.style.opacity = '1'
+    sub.style.opacity = '1'
+    sub.style.display = 'flex'
     box.style.background = '#fff'
     flag++
   } else {
-    subWhere.style.opacity = '0'
+    sub.style.opacity = '0'
+    sub.style.display = 'none'
     box.style.background = 'none'
     flag--
   }
+}
+
+const subReseting = () => {
+  const divs = document.querySelectorAll('.search-sub-box>li>.subreseting')
+  const lis = document.querySelectorAll('.search-sub-box>li')
+  divs.forEach((val) => {
+    val.style.display = 'none'
+  })
+  lis.forEach((val) => {
+    val.style.background = 'none'
+  })
+}
+
+const subwhere = document.querySelector('.sub-where')
+const boxi = document.querySelector('.search-sub-box-where')
+subwhere.style.display = 'none'
+document.querySelector('.search-sub-box-where').addEventListener('click', () => {
+  subReseting()
+  subChecker(subwhere, boxi)
 })
+
+const subwhen = document.querySelector('.when-sub')
+const boxii = document.querySelector('.search-sub-box-date')
+subwhen.style.display = 'none'
+document.querySelector('.search-sub-box-date').addEventListener('click', () => {
+  subReseting()
+  subChecker(subwhen, boxii)
+})
+
+// when sub search tabs
+const _li = document.querySelectorAll('.when-sub-menu-ul>li')
+const _sub = document.querySelectorAll('.when-sub-submenu>div')
+_li.forEach((val) => {
+  const datesul = document.querySelector('.when-sub-menu-ul-dates')
+  console.log(datesul)
+  const datesdatadash = datesul.getAttribute('data-tab', 'sub1')
+  console.log(datesdatadash)
+  datesul.style.background = '#fff'
+  document.querySelector('.when-sub-submenu>#' + datesdatadash).style.display = 'flex'
+  val.addEventListener('click', () => {
+    // reseting
+    tabResetting()
+    // opening
+    const tem = val.getAttribute('data-tab')
+    val.style.background = '#fff'
+    subChecker(subwhen, boxii)
+    document.querySelector('.when-sub-submenu').style.display = 'flex'
+    document.querySelector('.when-sub-submenu>#' + tem).style.display = 'flex'
+  })
+})
+const tabResetting = () => {
+  _li.forEach((val) => {
+    val.style.background = 'none'
+  })
+  _sub.forEach((val) => {
+    val.style.display = 'none'
+    document.querySelector('.when-sub-submenu').style.display = 'flex'
+  })
+}

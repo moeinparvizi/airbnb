@@ -43,6 +43,9 @@ body .background-color-gradient {
 .navigation {
   border-bottom: 1px solid #fff0f0;
 }
+.navigation > nav > .navigation-megamenu {
+  transition: 1s;
+}
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search {
   padding: 5px 10px;
 }
@@ -91,6 +94,17 @@ body .background-color-gradient {
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-where > .sub-where {
   z-index: 99 !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-date > .when-sub > .when-sub-menu > ul > li {
+  transition: 0.4s;
+  border-radius: 30px;
+  margin: 5px;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-date > .when-sub > .when-sub-menu > ul > li:hover {
+  background: #fff !important;
+}
+.navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-date > .when-sub > .when-sub-submenu > div {
+  display: none;
 }
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-where > h3,
 .navigation > nav > .navigation-megamenu > .navigation-megamenu-search > .search-sub > .search-sub-box > .search-sub-box-checkin > h3,
