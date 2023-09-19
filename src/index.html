@@ -10,6 +10,9 @@
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -86,7 +89,7 @@
               </li>
               <li class="search-sub-box-date">
                 <h3 class="text-airbnb-black">when</h3>
-                <p class="text-airbnb-dark">Add dates</p>
+                <p class="text-airbnb-dark inner-dates">Add dates</p>
                 <!-- todo -->
                 <div
                   class="when-sub subreseting absolute top-[110%] left-[0] w-[490px] rounded-[40px] p-[20px] bg-airbnb-white opacity-1 header-box-shadow">
@@ -94,7 +97,7 @@
                     <ul
                       class="when-sub-menu-ul w-[190px] h-[35px] flex justify-center items-center bg-airbnb-gray rounded-full">
                       <li data-tab='sub1' class="when-sub-menu-ul-dates p-[5px]">dates</li>
-                      <li data-tab='sub2' class="when-sub-menu-ul-mounth p-[5px]">mounth</li>
+                      <li data-tab='sub2' class="when-sub-menu-ul-month p-[5px]">month</li>
                       <li data-tab='sub3' class="when-sub-menu-ul-flexible p-[5px]">flexible
                       </li>
                     </ul>
@@ -102,7 +105,24 @@
                   <div class="when-sub-submenu mt-[5px] flex justify-center items-center">
                     <div id="sub1" class="when-sub-submenu-dates flex justify-center items-center">
                       <div id="calendar">
-                        <h1>October</h1>
+                        <div class="swiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">1 January </div>
+                            <div class="swiper-slide">2 February</div>
+                            <div class="swiper-slide">3 March</div>
+                            <div class="swiper-slide">4 April</div>
+                            <div class="swiper-slide">5 May</div>
+                            <div class="swiper-slide">6 June</div>
+                            <div class="swiper-slide">7 July</div>
+                            <div class="swiper-slide">8 August</div>
+                            <div class="swiper-slide">9 September</div>
+                            <div class="swiper-slide">10 October</div>
+                            <div class="swiper-slide">11November</div>
+                            <div class="swiper-slide">12 December</div>
+                          </div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        </div>
                         <table>
                           <tr>
                             <td class="lastmonth">30</td>
@@ -152,9 +172,36 @@
                         </table>
                       </div>
                     </div>
-                    <div id="sub2" class="when-sub-submenu-mounth">
-                      <div class="progress"></div>
-                      <input id="value-input" type="range" max="12" value="1">
+                    <div id="sub2" class="when-sub-submenu-month flex flex-col">
+                      <div class="card__percent">
+                        <svg>
+                          <defs>
+                            <radialGradient id="gradient" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+                              <stop offset="30%" stop-color="var(--primary-dark)" />
+                              <stop offset="100%" stop-color="var(--primary-light)" />
+                            </radialGradient>
+                          </defs>
+                          <circle cx="90" cy="90" r="90" stroke="url(#gradient)" id="circle"></circle>
+                        </svg>
+                        <div class="circle"></div>
+                        <div class="circle circle__medium"></div>
+                        <div class="circle circle__small"></div>
+                        <div class="card__number">6 month</div>
+                      </div>
+
+                      <div class="form">
+                        <h2 class="form__text">Insert month count</h2>
+                        <input type="text" placeholder="3" id="percent" onkeypress="return isNumeric(event)"
+                          maxlength="3">
+                        <button class="form__btn" onclick="changePercent()">Change</button>
+                        <div class="tooltip">
+                          <span class="material-icons">error</span>
+                          <span class="tooltip__text" data-toggle="tooltip">Insert a valid number</span>
+                        </div>
+                      </div>
+                      <a href="https://dribbble.com/myacode" class="dribbble" target="_blank"><ion-icon
+                          name="logo-dribbble"></ion-icon>
+                      </a>
                     </div>
                     <div id="sub3" class="when-sub-submenu-flexible">this is flexible in submenu</div>
                   </div>
@@ -213,5 +260,28 @@
   AOS.init();
 </script>
 <script src="assets/js/script.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script>
 
 </html>

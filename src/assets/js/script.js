@@ -165,16 +165,41 @@ const tabResetting = () => {
   })
 }
 
-const MAX = 12
-const cp = new CircleProgress('.progress', {
-  max: MAX,
-  value: 1,
-  animationDuration: 400,
-  textFormat: (val) => val + '°',
-});
 
-document.querySelector('#value-input').addEventListener('change', e => {
-  const val = e.target.value;
-  cp.value = val;
-  cp.el.style.setProperty('--progress-value', val / MAX);
-})
+const circle = document.getElementById('circle');
+const input = document.getElementById('percent');
+const number = document.querySelector('.card__number');
+const tooltip = document.querySelector('.tooltip');
+
+function circlePercent() {
+  let change = 565.49 - (565.49 * input.value) / 12;
+  circle.style.strokeDashoffset = change;
+};
+
+function isNumeric(event) {
+  if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode > 31)) {
+    return false;
+  }
+  if (event.keyCode == 13) {
+    changePercent();
+  }
+};
+function writeOnTop() {
+  document.querySelector('.inner-dates').innerHTML = input.value + ' month'
+}
+
+function changePercent() {
+  if (input.value > 12) {
+    tooltip.style.opacity = 1;
+    tooltip.classList.add('fade-in');
+    input.value = '';
+
+  } else {
+    tooltip.style.opacity = 0;
+    tooltip.classList.remove('fade-in');
+    number.innerHTML = Number(input.value) + ' month';
+    circlePercent();
+    writeOnTop()
+    input.value = '';
+  }
+};
