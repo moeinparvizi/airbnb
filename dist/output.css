@@ -742,6 +742,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }

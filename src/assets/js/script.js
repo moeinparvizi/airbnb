@@ -94,7 +94,20 @@ const subReseting = () => {
 const subwhere = document.querySelector('.sub-where')
 const boxi = document.querySelector('.search-sub-box-where')
 subwhere.style.display = 'none'
-document.querySelector('.search-sub-box-where').addEventListener('click', () => {
+document.querySelector('.search-sub-box-where').addEventListener('click', (event) => {
+  // for not close children
+  if (document.querySelector('.search-sub-box-where') !== event.target) return;
+
+  subReseting()
+  subChecker(subwhere, boxi)
+})
+const boxo = boxi.children[0]
+boxo.addEventListener('click', () => {
+  subReseting()
+  subChecker(subwhere, boxi)
+})
+const boxoo = boxo.nextElementSibling
+boxoo.addEventListener('click', () => {
   subReseting()
   subChecker(subwhere, boxi)
 })
@@ -102,7 +115,20 @@ document.querySelector('.search-sub-box-where').addEventListener('click', () => 
 const subwhen = document.querySelector('.when-sub')
 const boxii = document.querySelector('.search-sub-box-date')
 subwhen.style.display = 'none'
-document.querySelector('.search-sub-box-date').addEventListener('click', () => {
+boxii.addEventListener('click', (event) => {
+  // for not close children
+  if (document.querySelector('.search-sub-box-date') !== event.target) return;
+
+  subReseting()
+  subChecker(subwhen, boxii)
+})
+const boxiii = boxii.children[0]
+boxiii.addEventListener('click', () => {
+  subReseting()
+  subChecker(subwhen, boxii)
+})
+const boxiiii = boxiii.nextElementSibling
+boxiiii.addEventListener('click', () => {
   subReseting()
   subChecker(subwhen, boxii)
 })
@@ -112,12 +138,13 @@ const _li = document.querySelectorAll('.when-sub-menu-ul>li')
 const _sub = document.querySelectorAll('.when-sub-submenu>div')
 _li.forEach((val) => {
   const datesul = document.querySelector('.when-sub-menu-ul-dates')
-  console.log(datesul)
   const datesdatadash = datesul.getAttribute('data-tab', 'sub1')
-  console.log(datesdatadash)
   datesul.style.background = '#fff'
   document.querySelector('.when-sub-submenu>#' + datesdatadash).style.display = 'flex'
   val.addEventListener('click', () => {
+    // for not close children
+    subReseting()
+    subChecker(subwhen, boxii)
     // reseting
     tabResetting()
     // opening
@@ -126,7 +153,7 @@ _li.forEach((val) => {
     subChecker(subwhen, boxii)
     document.querySelector('.when-sub-submenu').style.display = 'flex'
     document.querySelector('.when-sub-submenu>#' + tem).style.display = 'flex'
-  })
+  }, true)
 })
 const tabResetting = () => {
   _li.forEach((val) => {
@@ -137,3 +164,17 @@ const tabResetting = () => {
     document.querySelector('.when-sub-submenu').style.display = 'flex'
   })
 }
+
+const MAX = 12
+const cp = new CircleProgress('.progress', {
+  max: MAX,
+  value: 1,
+  animationDuration: 400,
+  textFormat: (val) => val + '°',
+});
+
+document.querySelector('#value-input').addEventListener('change', e => {
+  const val = e.target.value;
+  cp.value = val;
+  cp.el.style.setProperty('--progress-value', val / MAX);
+})

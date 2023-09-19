@@ -142,3 +142,172 @@
   position: fixed;
   z-index: 20 !important;
 }
+
+
+#calendar{
+  width: 268px;
+  border-radius: 15px;
+  text-align:center;
+  color:#555;
+  box-shadow:0 0 50px -14px rgba(0,0,0,.8);
+  #calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
+  #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+  >h1{
+    background: $pink;
+    border-radius:5px 5px 0 0;
+    padding: 20px;
+    font-size: 4rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color: $white;
+    text-shadow: 0 0 10px rgba(0,0,0,.8);
+  }
+  >table{
+    border-top:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-spacing:0;
+    border-radius:0 0 5px 5px;
+    tr{
+      >td{
+        width:38px;
+        height:38px;
+        background:#eee;
+        border-right:1px solid #ddd;
+        border-bottom:1px solid #ddd;
+        padding:6px;
+        cursor:pointer;
+        transition: .3s;
+      }
+    }
+  }
+  & td:hover:not(.current){
+    background:#ddd;
+  }
+  
+  & .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+    background:#fff;
+    color:#999;
+  }
+  
+  & .current{
+    background: $pink;
+    font-weight:700;
+    color:#fff;
+    text-shadow:0 0 10px rgba(0,0,0,.5);
+  }
+  
+  & .hastask{
+    font-weight:700;
+  }
+}
+
+
+
+
+.progress {
+	--progress-value: .3243;
+	--color: hsl(calc(240 * (1 - var(--progress-value))), 100%, calc(30% + 20% * var(--progress-value)));
+  border: 1px solid red;
+}
+
+.circle-progress {
+	width: 250px;
+	height: 250px;
+}
+
+
+.circle-progress-value {
+	stroke-width: 6px;
+	stroke: var(--color);
+	stroke-dasharray: 5.98 2;
+	transition: stroke .4s;
+}
+
+.circle-progress-circle {
+	stroke-width: 2px;
+	stroke: hsl(228, 8%, 10%);
+}
+
+.circle-progress-text {
+	font-weight: bold;
+	fill: var(--color);
+	transform: translateX(.2em);
+	transition: fill .4s;
+}
+
+
+
+input[type=range] {
+	width: 210px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	-webkit-appearance: none;
+	display: inline-block;
+	background: none;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	@mixin track {
+		width: 100%;
+		height: 6px;
+		background: hsl(228, 8%, 10%);
+		outline: none;
+	}
+
+	@mixin thumb {
+		width: 16px;
+		height: 16px;
+		margin-top: -5px;
+		background: hsl(228, 8%, 30%);
+		transition: .15s;
+		border: none;
+		border-radius: 0;
+	}
+
+	@mixin thumb-active {
+		background: hsl(228, 8%, 50%);
+	}
+
+	&::-webkit-slider-runnable-track {
+		@include track;
+	}
+
+	&::-moz-range-track {
+		@include track;
+	}
+
+	&::-ms-track {
+		@include track;
+	}
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		@include thumb;
+	}
+
+	&::-moz-range-thumb {
+		@include thumb;
+	}
+
+	&::-ms-thumb {
+		@include thumb;
+	}
+
+	&:hover::-webkit-slider-thumb,
+	&:focus::-webkit-slider-thumb {
+		@include thumb-active;
+	}
+
+	&:hover::-moz-range-thumb,
+	&:focus::-moz-range-thumb {
+		@include thumb-active;
+	}
+
+	&:hover::-ms-thumb,
+	&:focus::-ms-thumb {
+		@include thumb-active;
+	}
+}

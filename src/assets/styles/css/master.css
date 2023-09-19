@@ -148,4 +148,158 @@ body .background-color-gradient {
   z-index: 20 !important;
 }
 
+#calendar {
+  width: 268px;
+  border-radius: 15px;
+  text-align: center;
+  color: #555;
+  box-shadow: 0 0 50px -14px rgba(0, 0, 0, 0.8);
+}
+#calendar #calendar tr:last-of-type td:first-of-type {
+  border-radius: 0 0 0 5px;
+}
+#calendar #calendar tr:last-of-type td:last-of-type {
+  border-radius: 0 0 5px 0;
+}
+#calendar > h1 {
+  background: #ff385c;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+#calendar > table {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-spacing: 0;
+  border-radius: 0 0 5px 5px;
+}
+#calendar > table tr > td {
+  width: 38px;
+  height: 38px;
+  background: #eee;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#calendar td:hover:not(.current) {
+  background: #ddd;
+}
+#calendar .lastmonth, #calendar #calendar .nextmonth, #calendar #calendar .nextmonth ~ * {
+  background: #fff;
+  color: #999;
+}
+#calendar .current {
+  background: #ff385c;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#calendar .hastask {
+  font-weight: 700;
+}
+
+.progress {
+  --progress-value: .3243;
+  --color: hsl(calc(240 * (1 - var(--progress-value))), 100%, calc(30% + 20% * var(--progress-value)));
+  border: 1px solid red;
+}
+
+.circle-progress {
+  width: 250px;
+  height: 250px;
+}
+
+.circle-progress-value {
+  stroke-width: 6px;
+  stroke: var(--color);
+  stroke-dasharray: 5.98 2;
+  transition: stroke 0.4s;
+}
+
+.circle-progress-circle {
+  stroke-width: 2px;
+  stroke: hsl(228, 8%, 10%);
+}
+
+.circle-progress-text {
+  font-weight: bold;
+  fill: var(--color);
+  transform: translateX(0.2em);
+  transition: fill 0.4s;
+}
+
+input[type=range] {
+  width: 210px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: hsl(228, 8%, 10%);
+  outline: none;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  background: hsl(228, 8%, 10%);
+  outline: none;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  background: hsl(228, 8%, 10%);
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: -5px;
+  background: hsl(228, 8%, 30%);
+  transition: 0.15s;
+  border: none;
+  border-radius: 0;
+}
+input[type=range]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  margin-top: -5px;
+  background: hsl(228, 8%, 30%);
+  transition: 0.15s;
+  border: none;
+  border-radius: 0;
+}
+input[type=range]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  margin-top: -5px;
+  background: hsl(228, 8%, 30%);
+  transition: 0.15s;
+  border: none;
+  border-radius: 0;
+}
+input[type=range]:hover::-webkit-slider-thumb, input[type=range]:focus::-webkit-slider-thumb {
+  background: hsl(228, 8%, 50%);
+}
+input[type=range]:hover::-moz-range-thumb, input[type=range]:focus::-moz-range-thumb {
+  background: hsl(228, 8%, 50%);
+}
+input[type=range]:hover::-ms-thumb, input[type=range]:focus::-ms-thumb {
+  background: hsl(228, 8%, 50%);
+}
+
 /*# sourceMappingURL=master.css.map */

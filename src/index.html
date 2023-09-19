@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/styles/css/master.css">
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+
 </head>
 
 <body>
@@ -97,9 +99,63 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="when-sub-submenu mt-[5px]">
-                    <div id="sub1" class="when-sub-submenu-dates">this is dates submenu</div>
-                    <div id="sub2" class="when-sub-submenu-mounth">this is mounth in submenu</div>
+                  <div class="when-sub-submenu mt-[5px] flex justify-center items-center">
+                    <div id="sub1" class="when-sub-submenu-dates flex justify-center items-center">
+                      <div id="calendar">
+                        <h1>October</h1>
+                        <table>
+                          <tr>
+                            <td class="lastmonth">30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="hastask">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td class="current">8</td>
+                            <td class="hastask">9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="hastask">12</td>
+                            <td>13</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td class="hastask">15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>
+                            <td class="hastask">21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td class="hastask">26</td>
+                            <td>27</td>
+                          </tr>
+                          <tr>
+                            <td>28</td>
+                            <td>29</td>
+                            <td class="hastask">30</td>
+                            <td>31</td>
+                            <td class="nextmonth">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div id="sub2" class="when-sub-submenu-mounth">
+                      <div class="progress"></div>
+                      <input id="value-input" type="range" max="12" value="1">
+                    </div>
                     <div id="sub3" class="when-sub-submenu-flexible">this is flexible in submenu</div>
                   </div>
                 </div>
