@@ -166,7 +166,6 @@ const tabResetting = () => {
 }
 
 
-// circle month progress
 const circle = document.getElementById('circle');
 const input = document.getElementById('percent');
 const number = document.querySelector('.card__number');
@@ -205,12 +204,13 @@ function changePercent() {
   }
 };
 
-// calendar
+// const swiperActive = 0
+// setInterval(() => {
+//   swiperActive = document.querySelector('.swiper-slide-active')
+// }, 400)
 const senderDates = (days) => {
-  let swiperActive = document.querySelector('.swiper-slide-active')
-  swiperActive = swiperActive.innerText.slice(2);
-  console.log(swiperActive)
-  document.querySelector('.inner-dates').innerHTML = days + ' ' + swiperActive
+  const swiperActive = document.querySelector('.swiper-slide-active')
+  document.querySelector('.inner-dates').innerHTML = swiperActive.innerText + ' ' + days
 }
 const daysOfMonth = document.querySelectorAll('td')
 daysOfMonth.forEach((val) => {

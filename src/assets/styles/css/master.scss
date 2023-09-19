@@ -171,20 +171,18 @@
     }
   }
   >table{
-    border-top:1px solid #ddd;
-    border-left:1px solid #ddd;
+    // border-top:1px solid #ddd;
+    // border-left:1px solid #ddd;
     border-spacing:0;
     border-radius:0 0 5px 5px;
     tr{
       >td{
         width:38px;
         height:38px;
-        background:#eee;
-        border-right:1px solid #ddd;
-        border-bottom:1px solid #ddd;
         padding:6px;
         cursor:pointer;
         transition: .3s;
+        border-radius: 50%;
       }
     }
   }
@@ -193,7 +191,6 @@
   }
   
   & .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
-    background:#fff;
     color:#999;
   }
   
@@ -207,19 +204,6 @@
   & .hastask{
     font-weight:700;
   }
-}
-
-
-
-
-.container {
-    min-height: 300px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--greyLight-2);
-    padding: 2rem;
 }
 
 .card {
@@ -394,13 +378,3 @@ svg circle {
   color: #EA4C89;
 }
 
-@keyframes fadeIn {
-    0% {
-      transform: translateY(-40px) scale(.5);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-    }
-  }

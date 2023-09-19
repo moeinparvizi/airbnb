@@ -48,6 +48,16 @@ body .background-color-gradient {
   color: #000 !important;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-40px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
 .navigation {
   border-bottom: 1px solid #fff0f0;
 }
@@ -186,26 +196,21 @@ body .background-color-gradient {
   color: #ff385c;
 }
 #calendar > table {
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
   border-spacing: 0;
   border-radius: 0 0 5px 5px;
 }
 #calendar > table tr > td {
   width: 38px;
   height: 38px;
-  background: #eee;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   padding: 6px;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 50%;
 }
 #calendar td:hover:not(.current) {
   background: #ddd;
 }
 #calendar .lastmonth, #calendar #calendar .nextmonth, #calendar #calendar .nextmonth ~ * {
-  background: #fff;
   color: #999;
 }
 #calendar .current {
@@ -216,16 +221,6 @@ body .background-color-gradient {
 }
 #calendar .hastask {
   font-weight: 700;
-}
-
-.container {
-  min-height: 300px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--greyLight-2);
-  padding: 2rem;
 }
 
 .card__percent {
@@ -386,17 +381,6 @@ svg circle {
   right: 2rem;
   top: 2rem;
   color: #EA4C89;
-}
-
-@keyframes fadeIn {
-  0% {
-    transform: translateY(-40px) scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=master.css.map */
