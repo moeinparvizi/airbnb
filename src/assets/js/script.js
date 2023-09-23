@@ -133,6 +133,27 @@ boxiiii.addEventListener('click', () => {
   subChecker(subwhen, boxii)
 })
 
+const whoi = document.querySelector('.search-sub-box-who')
+const whosub = document.querySelector('.search-sub-box-who-text-sub')
+whosub.style.display = 'none'
+whoi.addEventListener('click', (event) => {
+  // for not close children
+  if (document.querySelector('.search-sub-box-who') !== event.target) return;
+
+  subReseting()
+  subChecker(whosub, whoi)
+})
+const whoo = document.querySelector('.search-sub-box-who-text-head').children[0]
+whoo.addEventListener('click', () => {
+  subReseting()
+  subChecker(whosub, whoi)
+})
+const whooo = whoo.nextElementSibling
+whooo.addEventListener('click', () => {
+  subReseting()
+  subChecker(whosub, whoi)
+})
+
 // when sub search tabs
 const _li = document.querySelectorAll('.when-sub-menu-ul>li')
 const _sub = document.querySelectorAll('.when-sub-submenu>div')
@@ -228,3 +249,20 @@ const resettingTd = () => {
     i.style.color = '#555'
   })
 }
+
+
+// who operations
+const dash = (s) => {
+  const counterElement = s.nextElementSibling
+  let counter = counterElement.innerText
+  counter--
+  counterElement.innerText = counter
+}
+const plus = (s) => {
+  const counterElement = s.previousElementSibling
+  let counter = counterElement.innerText
+  counter++
+  counterElement.innerText = counter
+}
+
+// TODO: add new operations for dash and plus

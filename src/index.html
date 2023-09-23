@@ -87,10 +87,9 @@
                   </div>
                 </div>
               </li>
-              <li class="search-sub-box-date">
+              <li class="search-sub-box-date w-[120px]">
                 <h3 class="text-airbnb-black">when</h3>
                 <p class="text-airbnb-dark inner-dates">Add dates</p>
-                <!-- todo -->
                 <div
                   class="when-sub subreseting absolute top-[110%] left-[0] w-[490px] rounded-[40px] p-[20px] bg-airbnb-white opacity-1 header-box-shadow">
                   <div class="when-sub-menu flex justify-center h-[35px]">
@@ -207,15 +206,92 @@
                   </div>
                 </div>
               </li>
-              <li class="search-sub-box-who flex">
-                <div class="search-sub-box-who-text mr-2">
-                  <h3 class="text-airbnb-black">who</h3>
-                  <p class="text-airbnb-dark">Add guests</p>
+              <li class="search-sub-box-who flex justify-center items-center">
+                <div class="search-sub-box-who-text mr-2 flex justify-between items-center w-[200px]">
+                  <div class="search-sub-box-who-text-head">
+                    <h3 class="text-airbnb-black">who</h3>
+                    <p class="text-airbnb-dark">Add guests</p>
+                  </div>
+                  <div
+                    class="search-sub-box-who-search h-[35px] text-airbnb-white flex justify-center items-center background-color-gradient text-[20px] text-center rounded-[20px] p-[5px] header-box-shadow">
+                    <i class="bi bi-search text-airbnb-white"></i>
+                    search
+                  </div>
                 </div>
                 <div
-                  class="search-sub-box-who-search flex justify-center items-center background-color-gradient text-[20px] text-center rounded-[20px] p-[5px] header-box-shadow">
-                  <i class="bi bi-search"></i>
-                  search
+                  class="search-sub-box-who-text-sub subreseting flex flex-col items-center absolute top-[105%] left-[50%] bg-airbnb-white w-[300px] rounded-[40px] p-5">
+                  <ul class="who-sub-ul w-full">
+                    <li class="flex justify-between items-center w-full m-2">
+                      <div class="who-sub-li-title flex flex-col items-center">
+                        <h5 class="w-full font-bold">
+                          adults
+                        </h5>
+                        <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                          ages 13 or above
+                        </p>
+                      </div>
+                      <div
+                        class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                        <i onclick="dash(this)"
+                          class="bi bi-dash-lg who-sub-li-counter-dash m-3 text-[20px] text-airbnb-dark"></i>
+                        <p class="who-sub-li-counter-number">1</p>
+                        <i onclick="plus(this)"
+                          class="bi bi-plus-lg who-sub-li-counter-plus m-3 text-[20px] text-airbnb-dark"></i>
+                      </div>
+                    </li>
+                    <li class="flex justify-between items-center w-full m-2">
+                      <div class="who-sub-li-title flex flex-col items-center">
+                        <h5 class="w-full font-bold">
+                          children
+                        </h5>
+                        <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                          ages 2 - 12
+                        </p>
+                      </div>
+                      <div
+                        class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                        <i onclick="dash(this)"
+                          class="bi bi-dash-lg who-sub-li-counter-dash m-3 text-[20px] text-airbnb-gray"></i>
+                        <p class="who-sub-li-counter-number">0</p>
+                        <i onclick="plus(this)"
+                          class="bi bi-plus-lg who-sub-li-counter-plus m-3 text-[20px] text-airbnb-dark"></i>
+                      </div>
+                    </li>
+                    <li class="flex justify-between items-center w-full m-2">
+                      <div class="who-sub-li-title flex flex-col items-center">
+                        <h5 class="w-full font-bold">
+                          infants
+                        </h5>
+                        <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                          under 2
+                        </p>
+                      </div>
+                      <div
+                        class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                        <i onclick="dash(this)"
+                          class="bi bi-dash-lg who-sub-li-counter-dash text-[20px] text-airbnb-gray"></i>
+                        <p class="who-sub-li-counter-number">0</p>
+                        <i onclick="plus(this)"
+                          class="bi bi-plus-lg who-sub-li-counter-plus text-[20px] text-airbnb-dark"></i>
+                      </div>
+                    </li>
+                    <li class="flex justify-between items-center w-full m-2">
+                      <div class="who-sub-li-title flex flex-col items-center">
+                        <h5 class="w-full font-bold">
+                          infants
+                        </h5>
+                        <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                          are you have pets ?
+                        </p>
+                      </div>
+                      <div class="who-sub-li-counter w-[50px] flex justify-center items-center">
+
+                        <!-- WARN : changes this dont forget that -->
+
+                        <input type="checkbox">
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </div>
