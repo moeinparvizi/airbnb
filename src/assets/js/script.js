@@ -230,7 +230,6 @@ function changePercent() {
 const senderDates = (days) => {
   let swiperActive = document.querySelector('.swiper-slide-active')
   swiperActive = swiperActive.innerText.slice(2);
-  console.log(swiperActive)
   document.querySelector('.inner-dates').innerHTML = days + ' ' + swiperActive
 }
 const daysOfMonth = document.querySelectorAll('td')
@@ -256,13 +255,52 @@ const dash = (s) => {
   const counterElement = s.nextElementSibling
   let counter = counterElement.innerText
   counter--
+  underZero(counter, counterElement, s)
   counterElement.innerText = counter
 }
 const plus = (s) => {
   const counterElement = s.previousElementSibling
   let counter = counterElement.innerText
   counter++
+  underZero(counter, counterElement, s)
+  lightIcon(s)
   counterElement.innerText = counter
 }
 
 // TODO: add new operations for dash and plus
+
+const underZero = (c, ce, s) => {
+  s.style.transition = '.4s'
+  if (c <= 0) {
+    s.classList.add('text-airbnb-gray')
+    s.classList.remove('text-airbnb-dark')
+    ce.innerHTML = 0
+    s.preventDefault()
+  } if (c > 0) {
+    s.classList.remove('text-airbnb-gray')
+    s.classList.add('text-airbnb-dark')
+  }
+}
+const lightIcon = (s) => {
+  const firsticon = s.previousElementSibling.previousElementSibling
+  firsticon.classList.remove('text-airbnb-gray')
+  firsticon.classList.add('text-airbnb-dark')
+}
+
+
+// flexible tab in when
+document.querySelectorAll('.flexible-sub-any').forEach((val) => {
+  val.addEventListener('click', (e) => {
+    const inneri = document.querySelector('.inner-dates')
+    const flexsub = e.target.innerText
+    inneri.innerText = 'any' + ' ' + flexsub
+  })
+})
+
+document.querySelectorAll('.flexible-sub-month').forEach((val) => {
+  val.addEventListener('click', (e) => {
+    const inneri = document.querySelector('.inner-dates')
+    const flexsub = e.target.innerText
+    inneri.innerText = flexsub
+  })
+})

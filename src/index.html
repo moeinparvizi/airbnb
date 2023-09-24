@@ -198,11 +198,29 @@
                           <span class="tooltip__text" data-toggle="tooltip">Insert a valid number</span>
                         </div>
                       </div>
-                      <a href="https://dribbble.com/myacode" class="dribbble" target="_blank"><ion-icon
-                          name="logo-dribbble"></ion-icon>
-                      </a>
                     </div>
-                    <div id="sub3" class="when-sub-submenu-flexible">this is flexible in submenu</div>
+                    <div id="sub3" class="when-sub-submenu-flexible flex flex-col">
+                      <div class="weekend flex flex-col">
+                        <h6 class="text-center m-2">stay for a <span class="font-bold">weekend</span></h6>
+                        <div
+                          class="flex justify-center items-center m-2 [&>div]:cursor-pointer [&>div]:p-3 [&>div]:rounded-[40px] [&>div]:border [&>div]:border-airbnb-gray [&>div]:m-2 [&>div:hover]:border-airbnb-dark">
+                          <div class="animate__animated animate__bounce flexible-sub-any">weekend</div>
+                          <div class="flexible-sub-any">week</div>
+                          <div class="flexible-sub-any">month</div>
+                        </div>
+                      </div>
+                      <div class="goin">
+                        <h6 class="text-center">go in <span class="font-bold">november, december</span></h6>
+                        <div
+                          class="flex flex-wrap justify-center items-center m-2 [&>div]:p-5 [&>div]:cursor-pointer [&>div]:rounded-lg [&>div]:border [&>div]:border-airbnb-gray [&>div]:m-2 [&>div:hover]:border-airbnb-dark">
+                          <div class="flexible-sub-month">december</div>
+                          <div class="flexible-sub-month">april</div>
+                          <div class="flexible-sub-month">november</div>
+                          <div class="flexible-sub-month">january</div>
+                          <div class="flexible-sub-month">march</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -284,11 +302,9 @@
                           are you have pets ?
                         </p>
                       </div>
-                      <div class="who-sub-li-counter w-[50px] flex justify-center items-center">
-
-                        <!-- WARN : changes this dont forget that -->
-
-                        <input type="checkbox">
+                      <div class="who-sub-li-counter w-[50px] flex justify-center items-center mr-5">
+                        <input class="tgl tgl-light mr-5" id="cb1" type="checkbox">
+                        <label class="tgl-btn" for="cb1"></label>
                       </div>
                     </li>
                   </ul>
