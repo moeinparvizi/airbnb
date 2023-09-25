@@ -304,3 +304,31 @@ document.querySelectorAll('.flexible-sub-month').forEach((val) => {
     inneri.innerText = flexsub
   })
 })
+
+// mobile navigation menu
+document.querySelector('.mobile-search-sub').style.transition = '1s'
+document.querySelector('.mobile-search').style.transition = '1s'
+const mobileSearch = () => {
+  document.querySelector('.mobile-search-sub').classList.remove('top-[3000px]')
+  document.querySelector('.mobile-search').style.transform = 'scale(0)'
+}
+
+document.querySelector('.mobile-search').addEventListener('click', (val) => {
+  // for not close children
+  if (document.querySelector('.mobile-search') !== val.target) return;
+
+  mobileSearch()
+})
+
+const searchmobileicon = document.querySelector('.mobile-search').children[0].children[0]
+searchmobileicon.addEventListener('click', () => {
+  mobileSearch()
+})
+document.querySelector('.mobile-search').children[1].addEventListener('click', (val) => {
+  mobileSearch()
+})
+
+document.querySelector('.mobile-search-sub-close').addEventListener('click', (val) => {
+  document.querySelector('.mobile-search-sub').classList.add('top-[3000px]')
+  document.querySelector('.mobile-search').style.transform = 'scale(1)'
+})

@@ -17,7 +17,8 @@
 </head>
 
 <body>
-  <header class="navigation flex justify-center flex-col fixed z-50 w-full bg-airbnb-white">
+  <!-- desktop experiences -->
+  <header class="navigation hidden md:flex justify-center flex-col fixed z-50 w-full bg-airbnb-white">
     <nav>
       <ul
         class="navigation-megamenu hidden md:flex relative justify-between content-center items-center p-[20px] w-full">
@@ -343,7 +344,55 @@
       </ul>
     </nav>
   </header>
-  <div class="black-curtain flex hidden  z-[2]">s</div>
+  <!-- mobile navigation -->
+  <header class="md:hidden flex justify-center items-center flex-col fixed top-[10px] z-50 w-full">
+    <nav
+      class="mobile-search rounded-[40px] w-[90%] flex justify-between items-center header-box-shadow cursor-pointer">
+      <div class="flex justify-center items-center">
+        <i class="bi bi-search text-airbnb-dark m-5 text-[20px] font-bold"></i>
+        <div class="flex flex-col">
+          <h6 class="font-bold">any where</h6>
+          <p class="text-airbnb-gray">any week - any guests</p>
+        </div>
+      </div>
+      <div class="rounded-full m-5 border border-airbnb-gray">
+        <i class="bi bi-sliders px-2 py-8 text-[17px] font-bold"></i>
+      </div>
+    </nav>
+    <div
+      class="mobile-search-sub rounded-t-3xl border border-airbnb-gray absolute top-0 top-[3000px] absolute z-[51] rounded-lx w-full h-[100vh] p-5 bg-airbnb-white header-box-shadow">
+      <div class="flex justify-between items-center content-center h-[70px]">
+        <div class="text-dark mobile-search-sub-close mt-[10px]"><i class="bi bi-x-circle"></i></div>
+        <div class="[&>a]:capitalize [&>a]:font-bold">
+          <a href="#" class="p-5 text-airbnb-dark border-b border-airbnb-dark">stay</a>
+          <a href="#" class="!text-airbnb-gray">experiences</a>
+        </div>
+        <!-- this div in down of me for the postion of elements that are present above -->
+        <div></div>
+      </div>
+      <!-- TODO: you can complated acc in 1 day -->
+      <div class="mobile-search-sub-acc"></div>
+    </div>
+  </header>
+  <!-- footer navigation -->
+  <nav>
+    <ul
+      class="flex justify-center items-center p-4 md:hidden fixed z-50 top-[92%] border-t border-airbnb-gray w-full h-[70px]
+    [&>li]:flex [&>li]:flex-col [&>li]:justify-center [&>li]:items-center [&>li]:m-8 [&>li>p]:!text-[12px] [&>li>i]:!text-[20px] [&>li>*]:font-bold [&>li>p]:capitalize [&>li>*]:font-bold [&>li>*]:text-airbnb-gray">
+      <li>
+        <i class="bi bi-search"></i>
+        <p>explore</p>
+      </li>
+      <li>
+        <i class="bi bi-heart"></i>
+        <p>wishlists</p>
+      </li>
+      <li>
+        <i class="bi bi-person-circle"></i>
+        <p>log in</p>
+      </li>
+    </ul>
+  </nav>
   <section class="border h-[300vh] pt-[90px] px-[5px]">hello world</section>
 </body>
 <!-- aos cdn -->
