@@ -344,8 +344,9 @@
       </ul>
     </nav>
   </header>
+  <div class="black-curtain hidden"></div>
   <!-- mobile navigation -->
-  <header class="md:hidden flex justify-center items-center flex-col fixed top-[10px] z-50 w-full">
+  <header class="md:hidden flex justify-center items-center flex-col fixed top-[10px] z-40 w-full">
     <nav
       class="mobile-search rounded-[40px] w-[90%] flex justify-between items-center header-box-shadow cursor-pointer">
       <div class="flex justify-center items-center">
@@ -420,7 +421,7 @@
           <li class="header-box-shadow">
             <div class="row rounded-3xl" onclick="toggle(this)" data-num="1">
               <h2 class="text-[16px] transition-[1s]">when</h2>
-              <span class="w-[100px] flex justify-center items-center">i`m flexible</span>
+              <span class="w-[100px] flex justify-center items-center inner-dates">i`m flexible</span>
             </div>
             <div class="m-5" data-status="off">
               <div class="when-sub subreseting rounded-[40px] p-[20px] opacity-1">
@@ -634,10 +635,17 @@
           </li>
         </ul>
       </div>
+      <div class="absolute bottom-5 flex justify-between items-center w-full p-8">
+        <div class="text-[15px] text-airbnb-dark underline">clear all</div>
+        <div class="text-[15px] text-airbnb-white p-3 bg-airbnb-pink rounded-[40px] flex">
+          <i class="bi bi-search m-1"></i>
+          search
+        </div>
+      </div>
     </div>
   </header>
   <!-- footer navigation -->
-  <nav>
+  <nav class="footer-navigation">
     <ul
       class="flex justify-center items-center p-4 md:hidden fixed z-50 top-[92%] border-t border-airbnb-gray w-full h-[70px]
     [&>li]:flex [&>li]:flex-col [&>li]:justify-center [&>li]:items-center [&>li]:m-8 [&>li>p]:!text-[12px] [&>li>i]:!text-[20px] [&>li>*]:font-bold [&>li>p]:capitalize [&>li>*]:font-bold [&>li>*]:text-airbnb-gray">
@@ -691,6 +699,7 @@
     <div class="text-airbnb-dark text-[20px] flex md:hidden"><i class="bi bi-chevron-right"></i></div>
   </section>
   <section class="border">hi</section>
+
 </body>
 <!-- aos cdn -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

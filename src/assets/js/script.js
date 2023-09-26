@@ -311,6 +311,7 @@ document.querySelector('.mobile-search').style.transition = '1s'
 const mobileSearch = () => {
   document.querySelector('.mobile-search-sub').classList.remove('top-[3000px]')
   document.querySelector('.mobile-search').style.transform = 'scale(0)'
+  document.querySelector('.footer-navigation').style.display = 'none'
 }
 
 document.querySelector('.mobile-search').addEventListener('click', (val) => {
@@ -331,6 +332,7 @@ document.querySelector('.mobile-search').children[1].addEventListener('click', (
 document.querySelector('.mobile-search-sub-close').addEventListener('click', (val) => {
   document.querySelector('.mobile-search-sub').classList.add('top-[3000px]')
   document.querySelector('.mobile-search').style.transform = 'scale(1)'
+  document.querySelector('.footer-navigation').style.display = 'flex'
 })
 
 // acc
