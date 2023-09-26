@@ -362,7 +362,7 @@
     <div
       class="mobile-search-sub rounded-t-3xl border border-airbnb-gray absolute top-0 top-[3000px] absolute z-[51] rounded-lx w-full h-[100vh] p-5 bg-airbnb-white header-box-shadow">
       <div class="flex justify-between items-center content-center h-[70px]">
-        <div class="text-dark mobile-search-sub-close mt-[10px]"><i class="bi bi-x-circle"></i></div>
+        <div class="text-dark text-[20px] mobile-search-sub-close mt-[10px]"><i class="bi bi-x-circle"></i></div>
         <div class="[&>a]:capitalize [&>a]:font-bold">
           <a href="#" class="p-5 text-airbnb-dark border-b border-airbnb-dark">stay</a>
           <a href="#" class="!text-airbnb-gray">experiences</a>
@@ -371,7 +371,272 @@
         <div></div>
       </div>
       <!-- TODO: you can complated acc in 1 day -->
-      <div class="mobile-search-sub-acc"></div>
+      <div class="mobile-search-sub-acc flex justify-center items-center">
+        <ul
+          class="acc flex flex-wrap w-[90%] [&>li]:m-5 [&>li]:w-full [&>li>.row]:flex [&>li>.row]:cursor-pointer [&>li]:rounded-3xl [&>li>.row>h2]:w-[90%] [&>li>.row]:flex [&>li>.row]:pl-3 [&>li>.row]:h-14 [&>li>.row]:bg-airbnb-white [&>li>.row>h2]:flex [&>li>.row>h2]:items-center [&>li>div]:transition-[1s] [&>li>div]:overflow-hidden">
+          <li class="header-box-shadow rounded-3xl">
+            <div class="row rounded-3xl" onclick="toggle(this)" data-num="0">
+              <h2 class="text-[16px] transition-[1s]">where</h2>
+              <span class="w-[100px] flex justify-center items-center">i`m flexible</span>
+            </div>
+            <div class="m-5 flex justify-center items-center" data-status="off">
+              <div class="w-[290px] p-[20px]">
+                <div
+                  class="flex border border-airbnb-gray rounded-3xl [&>figure]:grow-0 [&>figure]:shrink-0 overflow-x-scroll no-scrollbar">
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/4e762891-75a3-4fe1-b73a-cd7e673ba915.jpg" alt="">
+                    <figcaption>i`m flexible</figcaption>
+                  </figure>
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/66355b01-4695-4db9-b292-c149c46fb1ca.jpg" alt="">
+                    <figcaption>middle east</figcaption>
+                  </figure>
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg" alt="">
+                    <figcaption>i`m flexible</figcaption>
+                  </figure>
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/a0fd6dfc-6bec-4abb-850e-9ab78ed7bf37.jpg" alt="">
+                    <figcaption>i`m flexible</figcaption>
+                  </figure>
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/d77de9f5-5318-4571-88c7-e97d2355d20a.jpg" alt="">
+                    <figcaption>i`m flexible</figcaption>
+                  </figure>
+                  <figure class="w-[80px] m-[5px]">
+                    <img class="object-cover hover:border rounded-xl"
+                      src="assets/images/contrys/ea5598d7-2b07-4ed7-84da-d1eabd9f2714.jpg" alt="">
+                    <figcaption>i`m flexible</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header-box-shadow">
+            <div class="row rounded-3xl" onclick="toggle(this)" data-num="1">
+              <h2 class="text-[16px] transition-[1s]">when</h2>
+              <span class="w-[100px] flex justify-center items-center">i`m flexible</span>
+            </div>
+            <div class="m-5" data-status="off">
+              <div class="when-sub subreseting rounded-[40px] p-[20px] opacity-1">
+                <div class="when-sub-menu-mobile flex justify-center h-[35px]">
+                  <ul
+                    class="when-sub-menu-ul-mobile w-[190px] h-[35px] flex justify-center items-center bg-airbnb-gray rounded-full">
+                    <li data-tab='sub1' class="when-sub-menu-ul-dates-mobile rounded-[40px] p-[5px]">dates</li>
+                    <li data-tab='sub2' class="when-sub-menu-ul-month rounded-[40px] p-[5px]">month</li>
+                    <li data-tab='sub3' class="when-sub-menu-ul-flexible rounded-[40px] p-[5px]">flexible
+                    </li>
+                  </ul>
+                </div>
+                <div class="when-sub-submenu-mobile mt-[5px] flex justify-center items-center">
+                  <div id="sub1" class="when-sub-submenu-dates flex justify-center items-center mt-5">
+                    <div id="calendar">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">1 January </div>
+                          <div class="swiper-slide">2 February</div>
+                          <div class="swiper-slide">3 March</div>
+                          <div class="swiper-slide">4 April</div>
+                          <div class="swiper-slide">5 May</div>
+                          <div class="swiper-slide">6 June</div>
+                          <div class="swiper-slide">7 July</div>
+                          <div class="swiper-slide">8 August</div>
+                          <div class="swiper-slide">9 September</div>
+                          <div class="swiper-slide">10 October</div>
+                          <div class="swiper-slide">11November</div>
+                          <div class="swiper-slide">12 December</div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                      <table class="rounded-xl">
+                        <tr>
+                          <td class="lastmonth">30</td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td class="hastask">4</td>
+                          <td>5</td>
+                          <td>6</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td class="current">8</td>
+                          <td class="hastask">9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td class="hastask">12</td>
+                          <td>13</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td class="hastask">15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td class="hastask">21</td>
+                          <td>22</td>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td class="hastask">26</td>
+                          <td>27</td>
+                        </tr>
+                        <tr>
+                          <td>28</td>
+                          <td>29</td>
+                          <td class="hastask">30</td>
+                          <td>31</td>
+                          <td class="nextmonth">1</td>
+                          <td>2</td>
+                          <td>3</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div id="sub2"
+                    class="when-sub-submenu-month hidden flex-col items-center justify-center w-[300px] h-[400px]">
+                    <div class="card__percent">
+                      <svg>
+                        <defs>
+                          <radialGradient id="gradient" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+                            <stop offset="30%" stop-color="var(--primary-dark)" />
+                            <stop offset="100%" stop-color="var(--primary-light)" />
+                          </radialGradient>
+                        </defs>
+                        <circle cx="90" cy="90" r="90" stroke="url(#gradient)" id="circle"></circle>
+                      </svg>
+                      <div class="circle"></div>
+                      <div class="circle circle__medium"></div>
+                      <div class="circle circle__small"></div>
+                      <div class="card__number">6 month</div>
+                    </div>
+
+                    <div class="form">
+                      <div class="tooltip">
+                        <span class="material-icons">error</span>
+                        <span class="tooltip__text" data-toggle="tooltip">Insert a valid number</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="sub3" class="when-sub-submenu-flexible hidden flex-col">
+                    <div class="weekend flex flex-col">
+                      <h6 class="text-center m-2">stay for a <span class="font-bold">weekend</span></h6>
+                      <div
+                        class="flex justify-center items-center m-2 [&>div]:cursor-pointer [&>div]:p-3 [&>div]:rounded-[40px] [&>div]:border [&>div]:border-airbnb-gray [&>div]:m-2 [&>div:hover]:border-airbnb-dark">
+                        <div class="animate__animated animate__bounce flexible-sub-any">weekend</div>
+                        <div class="flexible-sub-any">week</div>
+                        <div class="flexible-sub-any">month</div>
+                      </div>
+                    </div>
+                    <div class="goin">
+                      <h6 class="text-center">go in <span class="font-bold">november, december</span></h6>
+                      <div
+                        class="flex flex-wrap justify-center items-center m-2 [&>div]:p-5 [&>div]:cursor-pointer [&>div]:rounded-lg [&>div]:border [&>div]:border-airbnb-gray [&>div]:m-2 [&>div:hover]:border-airbnb-dark">
+                        <div class="flexible-sub-month">december</div>
+                        <div class="flexible-sub-month">april</div>
+                        <div class="flexible-sub-month">november</div>
+                        <div class="flexible-sub-month">january</div>
+                        <div class="flexible-sub-month">march</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </li>
+          <li class="header-box-shadow">
+            <div class="row rounded-3xl" onclick="toggle(this)" data-num="2">
+              <h2 class="text-[16px] transition-[1s]">who</h2>
+              <span class="w-[100px] flex justify-center items-center">i`m flexible</span>
+            </div>
+            <div class="m-5" data-status="off">
+              <ul class="who-sub-ul w-full">
+                <li class="flex justify-between items-center w-full m-2">
+                  <div class="who-sub-li-title flex flex-col items-center">
+                    <h5 class="w-full font-bold">
+                      adults
+                    </h5>
+                    <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                      ages 13 or above
+                    </p>
+                  </div>
+                  <div
+                    class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                    <i onclick="dash(this)"
+                      class="bi bi-dash-lg who-sub-li-counter-dash m-3 text-[20px] text-airbnb-dark"></i>
+                    <p class="who-sub-li-counter-number">1</p>
+                    <i onclick="plus(this)"
+                      class="bi bi-plus-lg who-sub-li-counter-plus m-3 text-[20px] text-airbnb-dark"></i>
+                  </div>
+                </li>
+                <li class="flex justify-between items-center w-full m-2">
+                  <div class="who-sub-li-title flex flex-col items-center">
+                    <h5 class="w-full font-bold">
+                      children
+                    </h5>
+                    <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                      ages 2 - 12
+                    </p>
+                  </div>
+                  <div
+                    class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                    <i onclick="dash(this)"
+                      class="bi bi-dash-lg who-sub-li-counter-dash m-3 text-[20px] text-airbnb-gray"></i>
+                    <p class="who-sub-li-counter-number">0</p>
+                    <i onclick="plus(this)"
+                      class="bi bi-plus-lg who-sub-li-counter-plus m-3 text-[20px] text-airbnb-dark"></i>
+                  </div>
+                </li>
+                <li class="flex justify-between items-center w-full m-2">
+                  <div class="who-sub-li-title flex flex-col items-center">
+                    <h5 class="w-full font-bold">
+                      infants
+                    </h5>
+                    <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                      under 2
+                    </p>
+                  </div>
+                  <div
+                    class="who-sub-li-counter flex justify-center items-center [&>i]:border [&>i]:border-solid [&>i]:border-1 [&>i]:rounded-full [&>i]:m-3 [&>i]:px-2">
+                    <i onclick="dash(this)"
+                      class="bi bi-dash-lg who-sub-li-counter-dash text-[20px] text-airbnb-gray"></i>
+                    <p class="who-sub-li-counter-number">0</p>
+                    <i onclick="plus(this)"
+                      class="bi bi-plus-lg who-sub-li-counter-plus text-[20px] text-airbnb-dark"></i>
+                  </div>
+                </li>
+                <li class="flex justify-between items-center w-full m-2">
+                  <div class="who-sub-li-title flex flex-col items-center">
+                    <h5 class="w-full font-bold">
+                      infants
+                    </h5>
+                    <p class="text-airbnb-dark adults-text-changer text-[12px]">
+                      are you have pets ?
+                    </p>
+                  </div>
+                  <div class="who-sub-li-counter w-[50px] flex justify-center items-center mr-5">
+                    <input class="tgl2 tgl-light2 mr-5" id="cb2" type="checkbox">
+                    <label class="tgl-btn2" for="cb2"></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <!-- footer navigation -->

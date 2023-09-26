@@ -58,6 +58,15 @@ body .background-color-gradient {
     opacity: 1;
   }
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .navigation {
   border-bottom: 1px solid #fff0f0;
 }
@@ -228,7 +237,7 @@ body .background-color-gradient {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 .card__number {
   position: absolute;
@@ -432,6 +441,58 @@ svg circle {
   transition: all 0.2s ease;
 }
 .tgl-light:checked + .tgl-btn {
+  background: #ff385c;
+}
+
+.tgl2 {
+  display: none;
+}
+.tgl2, .tgl2:after, .tgl2:before, .tgl2 *, .tgl2 *:after, .tgl2 *:before, .tgl2 + .tgl-btn2 {
+  box-sizing: border-box;
+}
+.tgl2::selection, .tgl2:after::selection, .tgl2:before::selection, .tgl2 *::selection, .tgl2 *:after::selection, .tgl2 *:before::selection, .tgl2 + .tgl-btn2::selection {
+  background: none;
+}
+.tgl2 + .tgl-btn2 {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.tgl2 + .tgl-btn2:after, .tgl2 + .tgl-btn2:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl2 + .tgl-btn2:after {
+  left: 0;
+}
+.tgl2 + .tgl-btn2:before {
+  display: none;
+}
+.tgl2:checked + .tgl-btn2:after {
+  left: 50%;
+}
+
+.tgl-light2 + .tgl-btn2 {
+  background: #f0f0f0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  padding: 2px;
+  transition: all 0.4s ease;
+}
+.tgl-light2 + .tgl-btn2:after {
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+.tgl-light2:checked + .tgl-btn2 {
   background: #ff385c;
 }
 

@@ -332,3 +332,82 @@ document.querySelector('.mobile-search-sub-close').addEventListener('click', (va
   document.querySelector('.mobile-search-sub').classList.add('top-[3000px]')
   document.querySelector('.mobile-search').style.transform = 'scale(1)'
 })
+
+// acc
+let rowacc = document.querySelectorAll('.row')
+for (let i = 0; i < rowacc.length; i++) {
+  let temp = rowacc[i].nextElementSibling.clientHeight
+  rowacc[i].nextElementSibling.setAttribute('data-h', temp)
+  rowacc[i].nextElementSibling.style.height = '0'
+}
+
+const resetAccTitle = () => {
+  document.querySelectorAll('.row').forEach((val) => {
+    val.children[0].style.fontSize = '16px'
+    val.children[0].style.fontWeight = 'normal'
+  })
+}
+
+const toggle = (s) => {
+  const h = s.nextElementSibling.getAttribute('data-h')
+  const status = s.nextElementSibling.getAttribute('data-status')
+  resetAccTitle()
+  if (status == 'off') {
+    s.nextElementSibling.style.height = h + 'px'
+    s.nextElementSibling.setAttribute('data-status', 'on')
+    s.children[0].style.fontSize = '30px'
+    s.children[0].style.fontWeight = 'bold'
+  } else {
+    s.nextElementSibling.style.height = '0px'
+    s.nextElementSibling.setAttribute('data-status', 'off')
+    s.children[0].style.fontSize = '16px'
+    s.children[0].style.fontWeight = 'normal'
+  }
+  resetAcc(s)
+
+}
+
+const resetAcc = (s) => {
+  let num = s.getAttribute('data-num')
+  for (let k = 0; k < rowacc.length; k++) {
+    if (k != num) {
+      rowacc[k].nextElementSibling.style.height = '0px'
+      rowacc[k].nextElementSibling.setAttribute('data-status', 'off')
+    }
+  }
+}
+
+
+
+const limo = document.querySelectorAll('.when-sub-menu-ul-mobile>li')
+const submo = document.querySelectorAll('.when-sub-submenu-mobile>div')
+limo.forEach((val) => {
+  const datesul = document.querySelector('.when-sub-menu-ul-dates-mobile')
+  const datesdatadash = datesul.getAttribute('data-tab', 'sub1')
+  datesul.style.background = '#fff'
+  datesul.style.borderRadius = '40px'
+  document.querySelector('.when-sub-submenu-mobile>#' + datesdatadash).style.display = 'flex'
+  val.addEventListener('click', () => {
+    // for not close children
+    subReseting()
+    subChecker(subwhen, boxii)
+    // reseting
+    tabResettingMo()
+    // opening
+    const tem = val.getAttribute('data-tab')
+    val.style.background = '#fff'
+    subChecker(subwhen, boxii)
+    document.querySelector('.when-sub-submenu-mobile').style.display = 'flex'
+    document.querySelector('.when-sub-submenu-mobile>#' + tem).style.display = 'flex'
+  }, true)
+})
+const tabResettingMo = () => {
+  limo.forEach((val) => {
+    val.style.background = 'none'
+  })
+  submo.forEach((val) => {
+    val.style.display = 'none'
+    document.querySelector('.when-sub-submenu-mobile').style.display = 'flex'
+  })
+}
+
