@@ -411,3 +411,24 @@ const tabResettingMo = () => {
   })
 }
 
+// header slider icone
+const sliderIcon = document.querySelectorAll('.header-slider-icon>figure')
+
+const sliderIconReset = () => {
+  sliderIcon.forEach((val) => {
+    val.style.transition = '.4s'
+    val.children[0].style.transition = '.4s'
+    val.classList.remove('border-b')
+    val.classList.remove('border-airbnb-dark')
+    val.children[0].classList.remove('!opacity-100')
+  })
+}
+
+sliderIcon.forEach((val) => {
+  val.addEventListener('click', () => {
+    sliderIconReset()
+    val.classList.add('border-b')
+    val.classList.add('border-airbnb-dark')
+    val.children[0].classList.add('!opacity-100')
+  })
+})

@@ -67,9 +67,6 @@ body .background-color-gradient {
   scrollbar-width: none; /* Firefox */
 }
 
-.navigation {
-  border-bottom: 1px solid #fff0f0;
-}
 .navigation > nav > .navigation-megamenu {
   transition: 1s;
 }

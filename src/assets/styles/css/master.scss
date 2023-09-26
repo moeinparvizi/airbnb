@@ -1,6 +1,6 @@
 @import 'global';
 .navigation{
-  border-bottom: 1px solid $graywhite;
+  // border-bottom: 1px solid $graywhite;
   >nav{
     >.navigation-megamenu{
       transition: 1s;
@@ -516,3 +516,4 @@ svg circle {
 		background: $pink;
 	}
 }
+
