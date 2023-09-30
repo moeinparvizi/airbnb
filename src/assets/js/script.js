@@ -329,7 +329,7 @@ document.querySelector('.mobile-search').children[1].addEventListener('click', (
   mobileSearch()
 })
 
-document.querySelector('.mobile-search-sub-close').addEventListener('click', (val) => {
+document.querySelector('.mobile-search-sub-close').addEventListener('click', () => {
   document.querySelector('.mobile-search-sub').classList.add('top-[3000px]')
   document.querySelector('.mobile-search').style.transform = 'scale(1)'
   document.querySelector('.footer-navigation').style.display = 'flex'
@@ -338,7 +338,7 @@ document.querySelector('.mobile-search-sub-close').addEventListener('click', (va
 // acc
 let rowacc = document.querySelectorAll('.row')
 for (let i = 0; i < rowacc.length; i++) {
-  let temp = rowacc[i].nextElementSibling.clientHeight
+  const temp = rowacc[i].nextElementSibling.clientHeight
   rowacc[i].nextElementSibling.setAttribute('data-h', temp)
   rowacc[i].nextElementSibling.style.height = '0'
 }
@@ -432,5 +432,82 @@ sliderIcon.forEach((val) => {
     val.classList.add('border-b')
     val.classList.add('border-airbnb-dark')
     val.children[0].classList.add('!opacity-100')
+  })
+})
+
+// swiper library ----------
+// desktop
+const swiper1 = new Swiper('.swiper1', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+// mobile
+const swiper2 = new Swiper('.swiper2', {
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// posts
+const swiper3 = new Swiper(".swiper3", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+// click on heart postes
+document.querySelectorAll('.bi-heart').forEach(val => {
+  val.addEventListener('click', e => {
+    e.target.classList.toggle('bi-heart')
+    e.target.classList.toggle('bi-heart-fill')
+  })
+})
+
+
+// footer multitabs
+const foli = document.querySelectorAll('.inspiration-click>li')
+const fosub = document.querySelectorAll('.inspiration-sub>div')
+const resetLiFooter = () => {
+  fosub.forEach(val => {
+    val.style.display = 'none'
+  })
+  foli.forEach(val => {
+    val.style.border = 'none'
+    val.classList.add('text-airbnb-gray')
+  })
+}
+const firstLiFooter = () => {
+  resetLiFooter()
+  foli[0].style.borderBottom = '2px solid black'
+  foli[0].classList.remove('text-airbnb-gray')
+  fosub[0].style.display = 'flex'
+}
+firstLiFooter()
+foli.forEach(val => {
+  val.addEventListener('click', e => {
+    resetLiFooter()
+    e.target.style.borderBottom = '2px solid black'
+    e.target.classList.remove('text-airbnb-gray')
+    const tab = val.getAttribute('data-sub')
+    document.querySelector('.inspiration-sub>#' + tab).style.display = 'flex'
   })
 })

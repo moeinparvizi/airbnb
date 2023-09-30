@@ -149,10 +149,11 @@
   border-radius: 15px;
   text-align:center;
   color:#555;
-  box-shadow:0 0 50px -14px rgba(0,0,0,.8);
+  // box-shadow:0 0 50px -14px rgba(0,0,0,.8);
   #calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
   #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
   >div{
+    overflow: hidden;
     height: 100px !important;
     display: flex;
     justify-content: center;
@@ -516,4 +517,3 @@ svg circle {
 		background: $pink;
 	}
 }
-

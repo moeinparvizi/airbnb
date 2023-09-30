@@ -177,7 +177,6 @@ body .background-color-gradient {
   border-radius: 15px;
   text-align: center;
   color: #555;
-  box-shadow: 0 0 50px -14px rgba(0, 0, 0, 0.8);
 }
 #calendar #calendar tr:last-of-type td:first-of-type {
   border-radius: 0 0 0 5px;
@@ -186,6 +185,7 @@ body .background-color-gradient {
   border-radius: 0 0 5px 0;
 }
 #calendar > div {
+  overflow: hidden;
   height: 100px !important;
   display: flex;
   justify-content: center;

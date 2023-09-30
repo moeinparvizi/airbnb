@@ -105,7 +105,7 @@
                   <div class="when-sub-submenu mt-[5px] flex justify-center items-center">
                     <div id="sub1" class="when-sub-submenu-dates flex justify-center items-center mt-5">
                       <div id="calendar">
-                        <div class="swiper">
+                        <div class="swiper1">
                           <div class="swiper-wrapper">
                             <div class="swiper-slide">1 January </div>
                             <div class="swiper-slide">2 February</div>
@@ -348,7 +348,7 @@
   <!-- mobile navigation -->
   <header class="md:hidden flex justify-center items-center flex-col fixed top-[10px] z-40 w-full">
     <nav
-      class="mobile-search rounded-[40px] w-[90%] flex justify-between items-center header-box-shadow cursor-pointer">
+      class="mobile-search bg-airbnb-white rounded-[40px] w-[90%] flex justify-between items-center header-box-shadow cursor-pointer">
       <div class="flex justify-center items-center">
         <i class="bi bi-search text-airbnb-dark m-5 text-[20px] font-bold"></i>
         <div class="flex flex-col">
@@ -361,7 +361,7 @@
       </div>
     </nav>
     <div
-      class="mobile-search-sub rounded-t-3xl border border-airbnb-gray absolute top-0 top-[3000px] absolute z-[51] rounded-lx w-full h-[100vh] p-5 bg-airbnb-white header-box-shadow">
+      class="mobile-search-sub rounded-t-3xl border border-airbnb-gray absolute top-0 top-[3000px] absolute !z-[999] rounded-lx w-full h-[100vh] p-5 bg-airbnb-white header-box-shadow">
       <div class="flex justify-between items-center content-center h-[70px]">
         <div class="text-dark text-[20px] mobile-search-sub-close mt-[10px]"><i class="bi bi-x-circle"></i></div>
         <div class="[&>a]:capitalize [&>a]:font-bold">
@@ -437,7 +437,7 @@
                 <div class="when-sub-submenu-mobile mt-[5px] flex justify-center items-center">
                   <div id="sub1" class="when-sub-submenu-dates flex justify-center items-center mt-5">
                     <div id="calendar">
-                      <div class="swiper">
+                      <div class="swiper swiper2">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">1 January </div>
                           <div class="swiper-slide">2 February</div>
@@ -645,9 +645,9 @@
     </div>
   </header>
   <!-- footer navigation -->
-  <nav class="footer-navigation">
+  <nav class="footer-navigation bg-airbnb-white">
     <ul
-      class="flex justify-center items-center p-4 md:hidden fixed z-50 top-[92%] border-t border-airbnb-gray w-full h-[70px]
+      class="flex justify-center bg-airbnb-white items-center p-4 md:hidden fixed z-50 top-[92%] border-t border-airbnb-gray w-full h-[70px]
     [&>li]:flex [&>li]:flex-col [&>li]:justify-center [&>li]:items-center [&>li]:m-8 [&>li>p]:!text-[12px] [&>li>i]:!text-[20px] [&>li>*]:font-bold [&>li>p]:capitalize [&>li>*]:font-bold [&>li>*]:text-airbnb-gray">
       <li>
         <i class="bi bi-search"></i>
@@ -664,7 +664,8 @@
     </ul>
   </nav>
   <section class="header-box-shadow pt-[91px] flex items-center justify-center">
-    <div class="text-airbnb-dark text-[20px] flex md:hidden"><i class="bi bi-chevron-left"></i></div>
+    <div class="text-airbnb-dark text-[20px] flex md:hidden"><i class="bi bi-chevron-left"></i>
+    </div>
     <div
       class="no-scrollbar header-slider-icon w-[95%] flex justify-center items-center overflow-x-scroll [&>figure]:w-12 [&>figure]:h-12 [&>figure]:grow-0 [&>figure]:shrink-0 [&>figure]:m-2 [&>figure]:p-2 [&>figure>img]:object-cover [&>figure>img]:opacity-60">
       <figure><img src="assets/images/icons/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt=""></figure>
@@ -696,9 +697,726 @@
       <figure><img src="assets/images/icons/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt=""></figure>
       <figure><img src="assets/images/icons/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg" alt=""></figure>
     </div>
-    <div class="text-airbnb-dark text-[20px] flex md:hidden"><i class="bi bi-chevron-right"></i></div>
+    <div class="text-airbnb-dark text-[20px] flex md:hidden">
+      <i class="bi bi-chevron-right"></i>
+    </div>
+    <div class="border border-airbnb-gray rounded-xl p-3 text-airbnb-dark flex justify-center items-center mr-5 mb-3">
+      <i class="bi bi-sliders p-2"></i>
+      filter
+    </div>
   </section>
-  <section class="border">hi</section>
+  <section class="mt-2 p-3">
+    <!-- for post slider -->
+    <div class="flex flex-wrap justify-center items-start [&>figure]:m-5">
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+      <figure class="flex flex-col w-[300px] relative h-[400px]" data-aos="fade-up">
+        <div class="w-[300px] rounded-2xl h-[300px]">
+          <div class="swiper swiper3 [&>.swiper-button-disabled]:!hidden">
+            <div
+              class="swiper-wrapper [&>div>img]:object-cover [&>div>img]:w-[300px] [&>div>img]:rounded-2xl [&>div>img]:h-[300px]">
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0c047466-3e20-4589-b6b5-ace39d1bfdd5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/018c508d-c975-43a9-8b2c-337b966abd54.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/0eef69bc-c4e6-4c12-9f1c-07b872849509.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/1a0da0d8-b85a-488a-8bb6-073212d3ff1e.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/posts/38a247ca-2241-4467-a244-14efd246444f.jpg" alt="">
+              </div>
+            </div>
+            <div
+              class="swiper-button-next !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-button-prev !bg-airbnb-white !opacity-80 !text-airbnb-black after:!text-[15px] !rounded-full">
+            </div>
+            <div
+              class="swiper-pagination [&>span]:!bg-airbnb-white [&>.swiper-pagination-bullet-active]:!bg-airbnb-white">
+            </div>
+          </div>
+        </div>
+        <figcaption class="p-2 text-[16px]">
+          <h3 class="flex justify-between text-airbnb-black font-bold text-[18px]">
+            <div>greensted green, uk</div><span class="text-[16px]"><i class="bi bi-star-fill"></i>4.95</span>
+          </h3>
+          <p class="text-airbnb-dark text-[14px] capitalize">individual host</p>
+          <p class="text-airbnb-dark text-[14px] uppercase">1 - 6 oct</p>
+          <i class="bi bi-heart absolute top-3 left-[90%] z-30"></i>
+          <div class="price underline">$12,000 total</div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="font-bold flex flex-col p-5 justify-center items-center text-[23px]">
+    <div class="text-[25px] mb-3">
+      continue exploring amazing views
+    </div>
+    <div class="header-box-shadow p-5 rounded-xl bg-airbnb-dark text-[#fff] cursor-pointer">
+      show more
+    </div>
+  </section>
+  <section class="inspiration bg-airbnb-lightgray pt-6">
+    <h3 class="text-[20px] text-airbnb-black m-4 mt-5 p-2 font-bold">Inspiration for future getaways</h3>
+    <div class="border-b border-airbnb-gray w-full overflow-y-scroll no-scrollbar">
+      <ul
+        class="inspiration-click flex [&>li]:p-4 [&>li]:capitalize [&>li]:cursor-pointer [&>li]:text-[18px] [&>li]:font-bold">
+        <li data-sub="foo1">popular</li>
+        <li data-sub="foo2">historic</li>
+        <li data-sub="foo3">coastal</li>
+        <li data-sub="foo4">islands</li>
+        <li data-sub="foo5">lakes</li>
+        <li data-sub="foo6">unique stays</li>
+        <li data-sub="foo7">categories</li>
+        <li data-sub="foo8">things to do</li>
+      </ul>
+    </div>
+    <div class="inspiration-sub p-4">
+      <div id="foo1">
+        <ul class="[&>li]:mr-20 my-5 flex flex-wrap ">
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+        </ul>
+      </div>
+      <div id="foo2">
+        <ul class="[&>li]:mr-20 my-5 flex flex-wrap ">
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+        </ul>
+      </div>
+      <div id="foo3">
+        <ul class="[&>li]:mr-20 my-5 flex flex-wrap ">
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+          <li class="w-[100px]"><a class="flex flex-col" href="#">
+              <div class="text-airbnb-dark font-bold text-[17px]">Aberfeldy</div>
+              <div class="text-airbnb-gray text-[14px]">Holiday rentals</div>
+            </a></li>
+        </ul>
+      </div>
+      <div id="foo4">hey</div>
+      <div id="foo5">moeinparvizi</div>
+      <div id="foo6">moeinparvizi</div>
+      <div id="foo7">moeinparvizi</div>
+      <div id="foo8">moeinparvizi</div>
+    </div>
+  </section>
+  <footer class="border-t border-airbnb-gray bg-airbnb-lightgray">
+    <div class="p-4">
+      <div class="flex flex-wrap">
+        <ul class="w-[500px] m-5 [&>li]:m-4 [&>li]:text-[18px]">
+          <li class="font-bold uppercase !text-[25px]">support</li>
+          <li><a href="" class="hover:underline capitalize text-airbnb-dark">help center</a></li>
+          <li><a href="" class="hover:underline capitalize text-airbnb-dark">airCover</a></li>
+          <li><a href="" class="hover:underline capitalize text-airbnb-dark">Anti-discrimination</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Disability support</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Cancellation options</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Report neighbourhood concern</a></li>
+        </ul>
+        <ul class="w-[500px] m-5 [&>li]:m-4 [&>li]:text-[18px]">
+          <li class="font-bold uppercase !text-[25px]">hosting</li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Airbnb your home</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">AirCover for Hosts</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Hosting resources</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Community forum</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Hosting responsibly</a></li>
+        </ul>
+        <ul class="w-[500px] m-5 [&>li]:m-4 [&>li]:text-[18px]">
+          <li class="font-bold uppercase !text-[25px]">airbnb</li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Newsroom</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">New features</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Careers</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Investors</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Gift cards</a></li>
+          <li><a href="" class="hover:underline text-airbnb-dark">Airbnb.org emergency stays</a></li>
+        </ul>
+      </div>
+      <hr class="text-airbnb-gray">
+      <div class="flex flex-wrap justify-between">
+        <a class="hover:underline flex font-bold text-airbnb-dark text-[20px] pt-5"
+          href="https://moeinparvizi.github.io/personal-website/">©
+          2023 ,
+          <h1> moeinparvizi , personal website</h1>
+        </a>
+        <div class="[&>a]:text-[25px] [&>a]:m-8 mt-5 pb-[100px] md:pb-0">
+          <a href="https://linkedin.com/in/moeinparvizi2002" class="hover:text-airbnb-gray"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/moeinparvizi" class="hover:text-airbnb-gray"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 <!-- aos cdn -->
@@ -706,29 +1424,6 @@
 <script>
   AOS.init();
 </script>
-<script src="assets/js/script.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-</script>
+<script src="assets/js/script.js" defer></script>
 
 </html>
