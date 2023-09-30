@@ -1,0 +1,90 @@
+// import bootsrap icon
+// @import  '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../fonts/bootstrap-icon/bootstrap-icons.css';
+// import tailwindcss
+// @import '../../../../dist/output.css';
+@import 'output.css';
+// import animate css
+// @import '../../../../node_modules/animate.css/animate.css';
+@import 'animate.css';
+// import font
+@font-face{
+  font-family: roboto;
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+ $pink: #ff385c;
+ $white: #fff;
+ $dark: #222;
+ $gray: #BFBFBF;
+ $graywhite: #fff0f0;
+ $black: #000;
+// repetitious codes
+:root{
+  font-size: 10px;
+  --primary-light: #ff385e;
+  --primary: #ff385c;
+  --primary-dark: #ff385c;
+  
+  --white: #FFFFFF;
+  --greyLight-1: #ebf5fc;
+  --greyLight-2: #d5e0f3;
+  --greyLight-3: #c1d9f0;
+  --greyDark: #646b8c;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: roboto;
+  font-size: 1.4rem;
+
+  a,a:visited{
+    color: black;
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .header-box-shadow{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  .background-color-gradient{
+    background-image: radial-gradient( circle at center 0%,#e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100% );
+  }
+}
+
+// for js
+.hover-setting-effect{
+  background: $gray !important;
+  >.bi{
+    color: $black !important;
+  }
+}
+
+
+// css animation
+@keyframes fadeIn {
+    0% {
+      transform: translateY(-40px) scale(.5);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+}
+
+// hide scrollbar
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
