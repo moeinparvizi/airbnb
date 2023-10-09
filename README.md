@@ -66,13 +66,13 @@ moein parvizi : https://github.com/moeinparvizi
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<center>
+
 ![image_2023-10-01_01-50-02](https://github.com/moeinparvizi/airbnb/assets/38692466/89308a54-b39c-48d8-98e0-4470be2432b7)
 ![image_2023-10-01_01-51-52](https://github.com/moeinparvizi/airbnb/assets/38692466/f4418c0e-896a-4145-91d6-abd112f2a037)
 ![image_2023-10-01_01-53-35momo](https://github.com/moeinparvizi/airbnb/assets/38692466/3e5be6f6-f1fb-47cf-9a6a-b555c4607f7a)
 ![image_2023-10-01_01-55-15](https://github.com/moeinparvizi/airbnb/assets/38692466/fb68c9a1-17bd-47f2-997f-30a11e643106)
 ![photo_2023-10-01_01-48-49](https://github.com/moeinparvizi/airbnb/assets/38692466/41a537d3-e408-4fd1-a8d5-618529e1daa9)
-</center>
+
 Hints :
 * build with animation css
 * build with vanila js
